@@ -1,0 +1,132 @@
+.sciencetechnics-year {
+	text-align: center;
+	.big {
+		margin-bottom: 15px;
+		color: $red;
+	}
+	h5 {
+		border-top: 1px solid rgba(51, 51, 51, 0.54);
+		width: fit-content;
+		padding-top: 15px;
+		margin: 0 auto;
+		color: rgba(51, 51, 51, 0.54);
+	}
+}
+.big {
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 60px;
+	display: block;
+}
+.section-sciencetechnics {
+	.text-wrapper {
+		align-items: center;
+	}
+}
+.section-sciencetechnics-functions {
+	.text-wrapper {
+		p + p {
+			margin-top: 10px;
+		}
+		.functions-list__item {
+			display: flex;
+			align-items: flex-start;
+			img {
+				margin-right: 10px;
+			}
+		}
+		.functions-list__item + .functions-list__item {
+			margin-top: 10px;
+		}
+		b {
+			display: inline;
+		}
+	}
+}
+
+.section-research-slider {
+	text-align: center;
+	padding-bottom: 60px;
+	h5 {
+		margin-top: 25px;
+	}
+	.reconstruction-slider {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 960px) {
+	.section-sciencetechnics-functions {
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+	}
+	.functions-list {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 35px;
+		li {
+			flex-basis: 49%;
+		}
+	}
+	.section-sciencetechnics-functions .text-wrapper .functions-list__item + .functions-list__item {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 640px) {
+	.section-sciencetechnics {
+		.text-wrapper__item {
+			flex-basis: 48%;
+		}
+	}
+	.functions-list {
+		flex-direction: column;
+		margin-bottom: 10px;
+	}
+	.functions-list li {
+		flex-basis: 100%;
+	}
+	.section-sciencetechnics-functions .text-wrapper .functions-list__item + .functions-list__item {
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	.section-sciencetechnics .text-wrapper__item {
+		flex-basis: 100%;
+	}
+	.section-sciencetechnics .text-wrapper {
+		flex-direction: column-reverse;
+	}
+	.section-sciencetechnics .text-wrapper__item + .text-wrapper__item,
+	.section-sciencetechnics-functions .text-wrapper__item + .text-wrapper__item {
+		margin-top: 0px;
+	}
+	.sciencetechnics-year {
+		margin-bottom: 10px;
+		.big {
+			margin-bottom: 8px;
+		}
+		h5 {
+			padding-top: 8px;
+		}
+	}
+	.section-sciencetechnics-functions .text-wrapper .functions-list__item img {
+		width: 12px;
+		height: 12px;
+		margin-right: 5px;
+		margin-top: 2px;
+	}
+	.section-research-slider {
+		.reconstruction-slider .slider-btn {
+			bottom: -82px;
+		}
+	}
+	.section-research-slider h5 {
+		margin-top: 16px;
+	}
+	.section-research-slider {
+		padding-bottom: 75px;
+	}
+}

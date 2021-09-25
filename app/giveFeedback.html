@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+	<section class="section section-calc-fund section-give-feedback">
+		<div class="section-inner">
+			<div class="text-wrapper">
+				<div class="text-wrapper__item">
+					<h1 class="bold">Оставить отзыв </h1>
+				</div>
+				<div class="text-wrapper__item">
+					<h3>Ваши отзывы позволяют нам предоставлять все более качественный сервис. Будем признательны, если вы
+						ответите
+						на несколько вопросов.</h3>
+				</div>
+			</div>
+
+			<div class="tabs-wrapper">
+				<div class="tabs">
+					<span class="tab">
+						<h3>О компании</h3>
+					</span>
+					<span class="tab">
+						<h3>О работе офиса</h3>
+					</span>
+					<span class="tab">
+						<h3>О качестве СМР</h3>
+					</span>
+					<span class="tab">
+						<h3>О качестве продукции</h3>
+					</span>
+				</div>
+				<div class="tabs-content">
+					<div class="tab-item">
+						<form action="">
+							<div class="text-wrapper">
+								<div class="text-wrapper__item">
+									<div class="form-group">
+										<label for="name">ФИО / Название организации</label>
+										<input id="name" type="text" name="name" placeholder="Шушпанова Мария Алексеевна">
+									</div>
+									<div class="form-group">
+										<label for="tel">Телефон</label>
+										<input id="tel" type="tel" name="tel" placeholder="+7 (917) 02-000-02">
+									</div>
+									<div class="form-group">
+										<label for="tel">Посоветуете нас?</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Да</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Да</li>
+												<li class="select__item">Нет</li>
+												<li class="select__item">Затрудняюсь ответить</li>
+											</ul>
+										</div>
+									</div>
+
+								</div>
+								<div class="text-wrapper__item">
+									<div class="form-group">
+										<label for="email">E-mail</label>
+										<input id="email" type="email" name="email" placeholder="111@yandex.ru">
+									</div>
+									<div class="form-group">
+										<label for="tel">Почему вы выбрали нас?</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Цена</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Цена</li>
+												<li class="select__item">Бренд</li>
+												<li class="select__item">Качество продукции/услуг</li>
+												<li class="select__item">Качество консультации</li>
+												<li class="select__item">Затрудняюсь ответить</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="text">Как нам стать лучше?</label>
+										<textarea name="text" id="text"></textarea>
+									</div>
+								</div>
+								<div class="form-bottom">
+									<button class="form-btn">Отправить</button>
+									<div class="permit">
+										Нажимая кнопку «Отправить», я подтверждаю свою дееспособность и даю согласие на обработку
+										своих
+										персональных данных в соответствии с <span>условиями</span>
+									</div>
+								</div>
+
+							</div>
+						</form>
+					</div>
+					<div class="tab-item">
+						<form action="">
+							<div class="text-wrapper">
+								<div class="text-wrapper__item">
+									<div class="form-group">
+										<label for="code">Идентификационный код</label>
+										<input id="code" type="text" name="code">
+									</div>
+									<div class="form-group">
+										<label for="tel">Вам разъяснили зависимость срока службы от коррозионной агрессивности
+											грунтов и материала сваи?</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Да</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Да</li>
+												<li class="select__item">Нет</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="tel">Вам разъяснили в каких случаях не предоставляется гарантия?</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Да</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Да</li>
+												<li class="select__item">Нет</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="text">Как нам стать лучше?</label>
+										<textarea name="text" id="text"></textarea>
+									</div>
+								</div>
+								<div class="text-wrapper__item">
+									<div class="form-group">
+										<label for="tel">Вам разъяснили последствия строительства без исследования
+											грунтов?</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Да</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Да</li>
+												<li class="select__item">Нет</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="tel">Вам разъяснили последствия отказа от контроля несущей способности
+											винтовых свай?</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Да</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Да</li>
+												<li class="select__item">Нет</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="tel">Вам рассказали о действующих акциях?</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Да</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Да</li>
+												<li class="select__item">Нет</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="form-bottom">
+									<button class="form-btn">Отправить</button>
+									<div class="permit">
+										Нажимая кнопку «Отправить», я подтверждаю свою дееспособность и даю согласие на обработку
+										своих
+										персональных данных в соответствии с <span>условиями</span>
+									</div>
+								</div>
+
+							</div>
+						</form>
+					</div>
+					<div class="tab-item">
+						<form action="">
+							<div class="text-wrapper">
+								<div class="text-wrapper__item">
+									<div class="form-group">
+										<label for="number">№ договора</label>
+										<input id="number" type="text" name="number">
+									</div>
+									<div class="form-group">
+										<label for="tel">Соблюдено ли равенство диагоналей свайного поля?</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Да</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Да</li>
+												<li class="select__item">Нет</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="tel">Отсутствуют ли отклонения погруженных свай от вертикали?</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Да</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Да</li>
+												<li class="select__item">Нет</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="tel">Соответствует ли высота цоколя проектным отметкам?</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Да</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Да</li>
+												<li class="select__item">Нет</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="tel">Оцените качество СМР в целом</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Хорошо</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Хорошо</li>
+												<li class="select__item">Отлично</li>
+												<li class="select__item">Удовлетворительно</li>
+												<li class="select__item">Плохо</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="text">Как нам стать лучше?</label>
+										<textarea name="text" id="text"></textarea>
+									</div>
+								</div>
+								<div class="text-wrapper__item">
+									<div class="form-group">
+										<label for="tel">Работы были выполнены в установленные сроки?</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Да</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Да</li>
+												<li class="select__item">Нет</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="tel">Соблюдено ли расположение свай вдоль осей свайных рядов?</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Да</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Да</li>
+												<li class="select__item">Нет</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="tel">Соблюдена ли горизонтальная плоскость свайного поля?</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Да</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Да</li>
+												<li class="select__item">Нет</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="tel">Имело ли место во время СМР что-то из перечисленного?</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">После СМР остался строительный мусор</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">После СМР остался строительный мусор</li>
+												<li class="select__item">Фундамент не отмыли и не прокрасили перед сдачей</li>
+												<li class="select__item">Брендированная спецодежда выглядела неопрятно</li>
+												<li class="select__item">Работы выполнялись с нарушением техники безопасности</li>
+												<li class="select__item">Нет</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="solider">Кого из сотрудников вы бы хотели отметить?</label>
+										<input id="solider" type="text" name="solider">
+									</div>
+								</div>
+								<div class="form-bottom">
+									<button class="form-btn">Отправить</button>
+									<div class="permit">
+										Нажимая кнопку «Отправить», я подтверждаю свою дееспособность и даю согласие на обработку
+										своих
+										персональных данных в соответствии с <span>условиями</span>
+									</div>
+								</div>
+
+							</div>
+						</form>
+					</div>
+					<div class="tab-item">
+						<form action="">
+							<div class="text-wrapper">
+								<div class="text-wrapper__item">
+									<div class="form-group">
+										<label for="code">№ договора</label>
+										<input id="code" type="text" name="code">
+									</div>
+									<div class="form-group">
+										<label for="tel">Оцените качество антикоррозийного покрытия</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Свая окрашена ровным слоем, без потеков</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Свая окрашена ровным слоем, без потеков</li>
+												<li class="select__item">Видны незначительные царапины, потеки</li>
+												<li class="select__item">Имеются царапины до металла, непрокрашенные элементы</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="tel">Оцените качество сварных швов</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Сварной шов сплошной, минимальное количество брызг</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Сварной шов сплошной, минимальное количество брызг</li>
+												<li class="select__item">Сварной шов сплошной, среднее количество брызг</li>
+												<li class="select__item">Сварной шов сплошной, большое количество брызг и/или
+													наличие шлака</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="tel">Оцените качество технологических отверстий</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Ровный круг, не имеет острых кромок</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Ровный круг, не имеет острых кромок</li>
+												<li class="select__item">Ровный круг с острыми кромками</li>
+												<li class="select__item">Овальное отверстие </li>
+											</ul>
+										</div>
+									</div>
+
+								</div>
+								<div class="text-wrapper__item">
+									<div class="form-group">
+										<label for="tel">На продукции были фирменные наклейки?</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Да</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Да</li>
+												<li class="select__item">Нет</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="tel">Оцените качество упаковки</label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Отличное, повреждения отсутствуют</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Отличное, повреждения отсутствуют</li>
+												<li class="select__item">Хорошее, незначительные повреждения упаковки</li>
+												<li class="select__item">Плохое, упаковка сильно повреждена</li>
+												<li class="select__item">Упаковка отсутствует </li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="tel">Оцените качество лопастей на сваях одного типа </label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Лопасти свай симметричны относительно друг друга</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Лопасти свай симметричны относительно друг друга</li>
+												<li class="select__item">Лопасти свай не симметричны относительно друг друга,
+													погрешность не более 2 см</li>
+												<li class="select__item">Лопасти свай не симметричны относительно друг друга,
+													погрешность более 2 см</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="tel">Считаете ли вы, что качество продукции соответствует цене? </label>
+										<div class="select">
+											<input class="select__input" type="hidden" name="">
+											<div class="select__head">Да</div>
+											<ul class="select__list" style="display: none;">
+												<li class="select__item">Да</li>
+												<li class="select__item">Нет</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="form-bottom">
+									<button class="form-btn">Отправить</button>
+									<div class="permit">
+										Нажимая кнопку «Отправить», я подтверждаю свою дееспособность и даю согласие на обработку
+										своих
+										персональных данных в соответствии с <span>условиями</span>
+									</div>
+								</div>
+
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-statics">
+		<div class="section-inner">
+			<h2>Статистические данные</h2>
+			<ul>
+				<li>
+					<div class="li-top"><img src="images/static9.svg" alt=""> <span>0</span></div>
+					<h5>судебных тяжб</h5>
+				</li>
+				<li>
+					<div class="li-top"><img src="images/static18.svg" alt=""> <span>55</span></div>
+					<h5>рекламаций</h5>
+				</li>
+				<li>
+					<div class="li-top"><img src="images/static5.svg" alt=""> <span>144</span></div>
+					<h5>отзывов на сайте</h5>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="section-rating">
+		<div class="section-inner no-padt">
+			<div class="rating-wrapper">
+				<h5>Полезна ли Вам информация на данной странице?</h5>
+				<div class="rating-btns">
+					<div class="rating-btn">
+						<button><img src="images/btn1.svg" alt=""></button>
+						<span>0</span>
+					</div>
+					<div class="rating-btn">
+						<button><img src="images/btn2.svg" alt=""></button>
+						<span>0</span>
+					</div>
+					<div class="rating-btn">
+						<button><img src="images/btn3.svg" alt=""></button>
+						<span>0</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="section-inner">
+			<div class="footer-box footer-box1">
+				<h6>Физическим лицам</h6>
+				<ul>
+					<li><a href="#">Проектирование</a></li>
+					<li><a href="#">Проекты домов/бань </a></li>
+					<li><a href="#">Примеры объектов</a></li>
+					<li><a href="#">Стадии строительства</a></li>
+					<li><a href="#">Карта выполненных объектов</a></li>
+					<li><a href="#">Калькулятор </a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Галерея </a></li>
+					<li><a href="#">Часто задаваемые вопросы</a></li>
+				</ul>
+				<h6>Цены</h6>
+				<ul>
+					<li><a href="#">Онлайн-оплата </a></li>
+				</ul>
+			</div>
+			<div class="footer-box footer-box2">
+				<h6>Юридическим лицам </h6>
+				<ul>
+					<li><a href="#">Геология </a></li>
+					<li><a href="#">Проектирование </a></li>
+					<li><a href="#">Испытания грунтов</a></li>
+					<li><a href="#">Реконструкция и усиление </a></li>
+					<li><a href="#">Галерея работ </a></li>
+					<li><a href="#">Менеджмент качества</a></li>
+				</ul>
+				<h6>НИОКР</h6>
+				<ul>
+					<li><a href="#">НТЦ</a></li>
+					<li><a href="#">ЦГМ</a></li>
+					<li><a href="#">УНЦ</a></li>
+					<li><a href="#">ЦАПР</a></li>
+					<li><a href="#">Конференции </a></li>
+				</ul>
+			</div>
+			<div class="footer-box footer-box3">
+				<h6>Компания </h6>
+				<ul>
+					<li><a href="#">Работа у нас </a></li>
+					<li><a href="#">Производство </a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Новости </a></li>
+					<li><a href="#">Статистика </a></li>
+					<li><a href="#">Реквизиты</a></li>
+					<li><a href="#">Договоры </a></li>
+				</ul>
+				<h6 class="title-footer">Статьи</h6>
+				<h6 class="title-footer">Партнерам</h6>
+				<h6 class="title-footer">Контакты</h6>
+			</div>
+			<div class="footer-box footer-box4">
+				<div class="socials">
+					<a href="#">
+						<div class="social social1"></div>
+					</a>
+					<a href="#">
+						<div class="social social2"></div>
+					</a>
+					<a href="#">
+						<div class="social social3"></div>
+					</a>
+					<a href="#">
+						<div class="social social4"></div>
+					</a>
+					<a href="#">
+						<div class="social social5"></div>
+					</a>
+					<a href="#">
+						<div class="social social6"></div>
+					</a>
+					<a href="#">
+						<div class="social social7"><img src="images/spot.svg" alt=""></div>
+					</a>
+					<a href="#">
+						<div class="social social8"><img src="images/mail.svg" alt=""></div>
+					</a>
+					<a href="#">
+						<div class="social social9"><img src="images/rutube.svg" alt=""></div>
+					</a>
+				</div>
+				<div class="pays">
+					<a href="#"><img src="images/pay1.svg" alt=""></a>
+					<a href="#"><img src="images/pay2.svg" alt=""></a>
+					<a href="#"><img src="images/pay3.svg" alt=""></a>
+					<a href="#"><img src="images/pay4.svg" alt=""></a>
+					<a href="#"><img src="images/pay5.svg" alt=""></a>
+					<a href="#"><img src="images/pay6.svg" alt=""></a>
+				</div>
+				<a href="#" class="politics"><img src="images/politics.svg" alt=""><span>Политика обработки персональных
+						данных</span></a>
+				<div class="info">2010 - 2021 © «ГлавФундамент»</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

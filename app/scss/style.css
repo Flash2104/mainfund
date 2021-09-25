@@ -1,0 +1,1073 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Oxygen+Mono);
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  outline: none !important;
+  background: transparent;
+  border: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.slick-slide {
+  outline: none !important;
+}
+
+#cssmenu {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#cssmenu ul,
+#cssmenu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#cssmenu ul {
+  position: relative;
+  z-index: 597;
+}
+
+#cssmenu ul li {
+  float: left;
+  min-height: 1px;
+  vertical-align: middle;
+}
+
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+
+#cssmenu ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 598;
+  width: 100%;
+}
+
+#cssmenu ul ul li {
+  float: none;
+}
+
+#cssmenu ul ul ul {
+  top: 0;
+  left: auto;
+  right: -99.5%;
+}
+
+#cssmenu ul li:hover > ul {
+  visibility: visible;
+}
+
+#cssmenu ul ul {
+  bottom: 0;
+  left: 0;
+}
+
+#cssmenu ul ul {
+  margin-top: 0;
+}
+
+#cssmenu ul ul li {
+  font-weight: normal;
+}
+
+#cssmenu a {
+  display: block;
+  line-height: 1em;
+  text-decoration: none;
+}
+
+#cssmenu {
+  background: #000;
+  font-size: 16px;
+}
+
+#cssmenu > ul {
+  *display: inline-block;
+}
+
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#cssmenu a {
+  background: #000;
+  color: #CBCBCB;
+  padding: 0 20px;
+}
+
+#cssmenu ul ul {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-transform: none;
+  min-width: 268px;
+  -webkit-box-shadow: 4px 4px 10px rgba(51, 51, 51, 0.25);
+          box-shadow: 4px 4px 10px rgba(51, 51, 51, 0.25);
+  padding: 10px 0;
+  background: #fff;
+}
+
+#cssmenu ul ul a {
+  color: #333333;
+  background: #fff;
+  line-height: 150%;
+  padding: 5px 20px;
+}
+
+#cssmenu ul ul li {
+  position: relative;
+}
+
+#cssmenu > ul > li > a {
+  line-height: 78px;
+}
+
+#cssmenu ul ul li:hover > a {
+  color: red;
+}
+
+#cssmenu ul ul li:last-child > a {
+  border-radius: 0 0 3px 3px;
+}
+
+#cssmenu ul ul li:last-child:hover > a {
+  border-radius: 0 0 0 3px;
+}
+
+#cssmenu ul ul li.has-sub > a:after {
+  content: '';
+  position: absolute;
+  background-image: url("../images/toggle.svg");
+  background-size: contain;
+  top: 50%;
+  width: 10px;
+  height: 14px;
+  right: 15px;
+  margin-top: -8px;
+}
+
+#cssmenu ul li:hover > a,
+#cssmenu ul li.active > a {
+  color: red;
+}
+
+#cssmenu ul li.last ul {
+  left: auto;
+  right: 0;
+}
+
+#cssmenu ul li.last ul ul {
+  left: auto;
+  right: 99.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 30px;
+  color: #333333;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 30px;
+  margin-bottom: 30px;
+  line-height: 28px;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  overflow-x: hidden;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  position: relative;
+  margin: 0;
+}
+
+#breadcrumbs {
+  margin: 0px auto;
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0 15px;
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+
+.header .city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header .city span {
+  border-bottom: 1px solid #FE0000;
+  color: rgba(255, 255, 255, 0.54);
+}
+
+.header .city img {
+  margin-right: 15px;
+}
+
+.header .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .info a {
+  display: block;
+  padding: 0 0 !important;
+  margin-top: 5px;
+  color: #fff !important;
+}
+
+.header .info img {
+  margin-right: 15px;
+}
+
+.header .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .info + .info {
+  margin-left: 30px;
+}
+
+.section-main-screen {
+  position: relative;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.section-main-screen .section-inner {
+  position: relative;
+  z-index: 4;
+}
+
+.section-main-screen::after {
+  position: absolute;
+  content: '';
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.section-main-screen h1 {
+  margin-bottom: 30px;
+}
+
+.section-main-screen .info {
+  margin-top: 40px;
+  position: relative;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-main-screen .info img {
+  margin-right: 20px;
+}
+
+.geology-services {
+  background-color: #000;
+  height: 550px;
+  overflow: hidden;
+}
+
+.geology-services .section-inner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.geology-services .section-inner-box {
+  position: relative;
+}
+
+.geology-services .circle {
+  background-image: url(../images/circle.png);
+  background-repeat: no-repeat;
+  right: -15px;
+  top: -66px;
+  height: 540px;
+  position: absolute;
+  width: 540px;
+  height: 540px;
+  background-position: center;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+}
+
+.geology-services .circle span {
+  display: block;
+  color: #FE0000;
+  font-size: 50px;
+}
+
+.geology-services .geology-services-list {
+  margin-bottom: 47px;
+}
+
+.geology-services .geology-services-list__item {
+  position: relative;
+  padding-left: 40px;
+  font-size: 25px;
+}
+
+.geology-services .geology-services-list__item::before {
+  position: absolute;
+  content: '';
+  background-image: url("../images/check.svg");
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 0;
+  top: 5px;
+}
+
+.geology-services .geology-services-list__item + .geology-services-list__item {
+  margin-top: 25px;
+}
+
+.geology-services .download {
+  color: #FE0000;
+  position: relative;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.geology-services .download img {
+  margin-right: 10px;
+}
+
+.price-table {
+  color: #000;
+}
+
+.price-table h2 {
+  margin-bottom: 72px;
+}
+
+.price-table .section-inner {
+  padding-bottom: 0px;
+}
+
+table.iksweb {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  height: auto;
+  text-align: center;
+}
+
+table.iksweb .top td {
+  font-weight: 700;
+}
+
+table.iksweb tr:nth-child(even) {
+  background: #E5E5E5;
+}
+
+.title {
+  padding-left: 22px;
+}
+
+table.iksweb td,
+table.iksweb th {
+  padding: 17px 3px;
+  width: 30px;
+  height: 35px;
+}
+
+table.iksweb th {
+  background: #347c99;
+  color: #fff;
+  font-weight: normal;
+}
+
+.red {
+  color: #FE0000;
+}
+
+.send-form {
+  color: #000;
+}
+
+.send-form .section-inner {
+  padding-top: 75px;
+}
+
+.send-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.send-form .form-group {
+  color: #333333;
+}
+
+.send-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.send-form .form-group input {
+  border: none;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.54);
+  width: 100%;
+}
+
+.send-form .form-group + .form-group {
+  margin-top: 35px;
+}
+
+.send-form .form-group textarea {
+  border: 1px solid rgba(51, 51, 51, 0.54);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.send-form .form {
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #333333;
+}
+
+.send-form .form-group.message label {
+  margin-bottom: 25px;
+}
+
+.send-form .form-btn {
+  border: 1px solid #FE0000;
+  padding: 11px 30px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 26px;
+  font-weight: 700;
+}
+
+.send-form .phone-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.send-form .phone-info img {
+  margin: 0 12px;
+}
+
+.send-form .phone-info a {
+  font-size: 16px;
+}
+
+.send-form .permit {
+  font-size: 14px;
+}
+
+.send-form .permit span {
+  border-bottom: 2px solid #FE0000;
+}
+
+.btn-tertiary {
+  color: #333333;
+  padding: 0;
+  line-height: 30px;
+  width: 130px;
+  display: block;
+  border: 1px solid rgba(51, 51, 51, 0.54);
+  border-radius: 10px;
+  font-size: 14px;
+  margin-left: 19px;
+}
+
+.btn-tertiary:hover,
+.btn-tertiary:focus {
+  color: #888888;
+  border-color: #888888;
+}
+
+/* input file style */
+.input-file {
+  width: 0.1px !important;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.input-file + .js-labelFile {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.input-file + .js-labelFile .icon:before {
+  content: "\f093";
+}
+
+.input-file + .js-labelFile.has-file .icon:before {
+  content: "\f00c";
+  color: #5AAC7B;
+}
+
+.form-group.file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map {
+  background: #000;
+  position: relative;
+}
+
+.map .right-table {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  background: rgba(255, 255, 255, 0.13);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  padding: 40px 60px;
+  min-width: 600px;
+}
+
+.map .right-table li + li {
+  margin-top: 30px;
+}
+
+.map h2 {
+  color: #fff;
+}
+
+.map .st0 {
+  fill: #000;
+  stroke: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.map .st0:hover {
+  fill: #898989;
+  -webkit-mask: none;
+          mask: none;
+  stroke: transparent;
+}
+
+.map .focus {
+  width: 200px;
+  background: #d3d3d3;
+  height: 100px;
+  margin: 15px;
+  float: left;
+}
+
+.map .tooltip {
+  display: none;
+  padding: 15px;
+  position: absolute;
+  z-index: 9999999999;
+  background: #d3d3d3;
+  border-radius: 4px;
+  color: #000;
+}
+
+.map .map-inner {
+  position: relative;
+}
+
+.map .map-inner svg {
+  width: 100%;
+}
+
+.partners h2 {
+  margin-bottom: 40px;
+}
+
+.partners .partners-warapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.partners .partners-warapper .partners-warapper__item {
+  -ms-flex-preferred-size: 21%;
+      flex-basis: 21%;
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+@media (max-width: 1200px) {
+  .section-inner {
+    max-width: 990px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .geology-services .geology-services-list li {
+    max-width: 375px;
+    line-height: 35px;
+  }
+  .geology-services .geology-services-list li:nth-child(5),
+  .geology-services .geology-services-list li:nth-child(1) {
+    max-width: 675px;
+  }
+  .geology-services {
+    height: 640px;
+  }
+  .geology-services .geology-services-list__item + .geology-services-list__item {
+    margin-top: 35px;
+  }
+  .geology-services .circle {
+    right: -66px;
+  }
+  .partners .partners-warapper .partners-warapper__item {
+    -ms-flex-preferred-size: 42%;
+        flex-basis: 42%;
+  }
+  .map .right-table {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 960px) {
+  .section-inner {
+    max-width: 670px;
+  }
+  .section-main-screen h1 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 23px;
+  }
+  .section-main-screen {
+    height: 400px;
+  }
+  .section-main-screen .info img {
+    width: 43px;
+    height: 41px;
+  }
+  .geology-services {
+    height: auto;
+  }
+  .geology-services .geology-services-list li:nth-child(5),
+  .geology-services .geology-services-list li:nth-child(1),
+  .geology-services .geology-services-list li {
+    max-width: 100%;
+  }
+  .geology-services .circle {
+    position: unset;
+    height: 514px;
+  }
+  .section-inner-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .geology-services .geology-services-list__item {
+    font-size: 23px;
+  }
+  .geology-services .geology-services-list {
+    margin-bottom: 0;
+  }
+  .geology-services .download {
+    font-size: 14px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0px auto;
+  }
+  .geology-services .geology-services-list__item + .geology-services-list__item {
+    margin-top: 20px;
+  }
+  .geology-services .circle {
+    margin: 0px auto;
+    font-size: 23px;
+  }
+  .geology-services .circle span {
+    font-size: 38px;
+    margin-top: 10px;
+  }
+  table.iksweb {
+    font-size: 16px;
+  }
+  table.iksweb .top td {
+    max-width: 84px;
+  }
+  table.iksweb td,
+  table.iksweb th {
+    padding: 18px 0;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .price-table h2 {
+    margin-bottom: 34px;
+  }
+  .send-form .form {
+    font-size: 16px;
+  }
+  .send-form .phone-info {
+    display: none;
+  }
+  .send-form .permit {
+    font-size: 12px;
+  }
+  .form-btn {
+    font-size: 14px;
+  }
+  .map .right-table {
+    display: none;
+  }
+  .map .map-inner svg {
+    height: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-inner {
+    max-width: 510px;
+  }
+  .section-main-screen h1 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .section-main-screen {
+    height: 300px;
+  }
+  .section-main-screen .info img {
+    width: 38px;
+    height: 36px;
+  }
+  .geology-services .geology-services-list__item {
+    font-size: 19px;
+  }
+  .geology-services .geology-services-list__item::before {
+    width: 20px;
+    height: 20px;
+    top: 8px;
+  }
+  .geology-services .geology-services-list__item {
+    padding-left: 30px;
+  }
+  .geology-services .circle {
+    width: 100%;
+    height: 450px;
+    font-size: 20px;
+  }
+  .geology-services .circle span {
+    font-size: 30px;
+  }
+  .table {
+    overflow-x: scroll;
+  }
+  .table::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+  }
+  .table::-webkit-scrollbar {
+    width: 100px;
+    height: 2px;
+    background-color: #F5F5F5;
+  }
+  .table::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #FE0000;
+  }
+  table.iksweb {
+    width: 640px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .price-table h2 {
+    margin-bottom: 26px;
+  }
+  .partners-warapper__item img {
+    width: auto;
+    height: 40px;
+  }
+  .partners .partners-warapper .partners-warapper__item {
+    margin-bottom: 39px;
+  }
+  .map .map-inner svg {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-inner {
+    max-width: 350px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .section-main-screen h1 {
+    font-size: 23px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  .section-main-screen .info img {
+    width: 35px;
+    height: 33px;
+  }
+  .section-main-screen .info {
+    margin-top: 20px;
+  }
+  .geology-services .circle {
+    height: 299px;
+    font-size: 17px;
+  }
+  .geology-services .circle span {
+    font-size: 23px;
+  }
+  .geology-services .geology-services-list__item {
+    font-size: 17px;
+  }
+  .geology-services .geology-services-list li {
+    line-height: 22px;
+  }
+  .geology-services .geology-services-list li:nth-child(5),
+  .geology-services .geology-services-list li:nth-child(1),
+  .geology-services .geology-services-list li {
+    max-width: 250px;
+  }
+  .geology-services .geology-services-list__item::before {
+    width: 15px;
+    height: 15px;
+    top: 4px;
+  }
+  .geology-services .geology-services-list__item {
+    padding-left: 25px;
+  }
+  .section-main-screen .info {
+    font-size: 16px;
+  }
+  table.iksweb {
+    font-size: 14px;
+  }
+  table.iksweb .top td {
+    max-width: 54px;
+  }
+  .send-form .form {
+    font-size: 14px;
+  }
+  .form-btn {
+    font-size: 12px;
+  }
+  .send-form .permit {
+    font-size: 8px;
+  }
+  .send-form .form-group textarea {
+    height: 100px;
+  }
+  .send-form .form-btn {
+    padding: 10px 20px;
+  }
+  .send-form .form {
+    padding: 15px;
+  }
+  .btn-tertiary {
+    margin-left: 8px;
+  }
+  .partners-warapper__item img {
+    height: 25px;
+  }
+  .partners .partners-warapper .partners-warapper__item {
+    margin-bottom: 20px;
+  }
+  .map .map-inner svg {
+    height: 200px;
+  }
+  table.iksweb td,
+  table.iksweb th {
+    padding: 16.5px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,156 @@
+.section-work {
+	.big {
+		color: #333333;
+		span {
+			color: $red;
+		}
+	}
+	.work-text {
+		text-align: center;
+		font-weight: 700;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	.work-wrapper {
+		display: flex;
+		justify-content: space-between;
+		h5 {
+			max-width: 246px;
+		}
+	}
+	.work-video {
+		height: 500px;
+		margin: 60px 0;
+	}
+	// .leadership-wrapper__item {
+	// 	flex-basis: 100%;
+	// 	.leadership-link {
+	// 		justify-content: center;
+
+	// 	}
+	// }
+	.leadership-name {
+		h5 {
+			margin-top: 10px;
+		}
+	}
+	.form-title {
+		text-align: left;
+		max-width: 840px;
+	}
+	.leadership-link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 10px;
+		img {
+			margin-right: 20px;
+		}
+	}
+	.functions-list {
+		display: block;
+	}
+}
+
+@media (max-width: 1200px) {
+	.section-work {
+		.work-wrapper {
+			flex-direction: column;
+		}
+		.sciencetechnics-year + .sciencetechnics-year {
+			margin-top: 30px;
+		}
+	}
+}
+
+@media (max-width: 960px) {
+	.section-work-differences {
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+	}
+	.section-work .work-video {
+		height: 300px;
+	}
+}
+
+@media (max-width: 640px) {
+	.section-work {
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+	}
+	.section-work .text-wrapper li + li {
+		margin-top: 15px;
+	}
+	.section-work .work-video {
+		height: 245px;
+	}
+}
+.form-group__file {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	&-btn {
+		border: 1px solid rgba(51, 51, 51, 0.54);
+		border-radius: 10px;
+		padding: 4px 12px;
+		margin-left: 20px;
+		display: flex;
+		width: max-content;
+		cursor: pointer;
+		&:hover {
+			background-color: rgba(144, 163, 203, 0.2);
+		}
+	}
+	#files-area {
+		// width: 30%;
+		// margin: 0 auto;
+	}
+	.file-block {
+		// border-radius: 10px;
+		// background-color: rgba(144, 163, 203, 0.2);
+		font-size: 14px;
+		margin: 5px;
+		color: initial;
+		display: flex;
+		align-items: center;
+		& > span.name {
+			padding-right: 10px;
+			width: max-content;
+			display: inline-flex;
+		}
+		img {
+			width: 20px;
+			height: 19px;
+			margin-right: 5px;
+		}
+	}
+	.file-delete {
+		display: flex;
+		width: 14px;
+		color: initial;
+		background-color: #6eb4ff00;
+		font-size: large;
+		justify-content: center;
+		margin-right: 3px;
+		cursor: pointer;
+		&:hover {
+			background-color: rgba(144, 163, 203, 0.2);
+			border-radius: 10px;
+		}
+		& > span {
+			transform: rotate(45deg);
+		}
+	}
+	input {
+		width: auto !important;
+	}
+	#files-names {
+		// display: flex;
+		// flex-wrap: wrap;
+		// align-items: center;
+		display: inline-flex;
+		flex-wrap: wrap;
+	}
+}

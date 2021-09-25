@@ -1,0 +1,354 @@
+.section-foreign-experience {
+	.text {
+		font-weight: 700;
+		padding-left: 20px;
+		max-width: 450px;
+	}
+}
+
+.foreign-experience-videos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__item {
+		flex-basis: 48.2%;
+		margin-top: 35px;
+		.company {
+			font-weight: 700;
+			margin-bottom: 5px;
+		}
+		.city {
+			display: flex;
+			align-items: center;
+			margin-bottom: 14px;
+			img {
+				margin-right: 10px;
+			}
+		}
+	}
+	&__item:nth-child(1),
+	&__item:nth-child(2) {
+		margin-top: 0;
+	}
+
+	&__item-img {
+		height: 320px;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		margin-bottom: 15px;
+		img {
+			position: relative;
+			z-index: 3;
+		}
+		&::after {
+			position: absolute;
+			content: "";
+			background: rgba(0, 0, 0, 0.6);
+			width: 100%;
+			height: 100%;
+			right: 0;
+			left: 0;
+			top: 0;
+			z-index: 2;
+		}
+	}
+}
+
+.section-foreign-experience .wrapper {
+	margin-top: 10px;
+}
+
+.section-grafic2 {
+	p {
+		max-width: 633px;
+	}
+	.grafic-img {
+		background-image: url("../images/circle3.svg");
+		height: 540px;
+	}
+	.grafic-wrapper-box--right {
+		right: 80%;
+	}
+	.grafic-wrapper-box {
+		margin-top: 0;
+		top: 35%;
+	}
+	.grafic-wrapper-box--right::after {
+		left: 50%;
+	}
+	.grafic-wrapper-box--left {
+		left: 102.5%;
+	}
+	.grafic-wrapper-box--left2 {
+		top: 58%;
+	}
+}
+@media (max-width: 1200px) {
+	.foreign-experience-videos__item-img {
+		height: 260px;
+	}
+	.section-grafic2 {
+		.grafic-wrapper-box {
+			top: 28%;
+		}
+		.grafic-wrapper-box--right::after {
+			top: 30px;
+			width: 110px;
+			left: 80%;
+		}
+		.grafic-wrapper-box--right {
+			right: 95%;
+		}
+		.grafic-img {
+			width: 550px;
+			height: 480px;
+		}
+		.grafic-wrapper-box--left::before {
+			width: 110px;
+			right: 110%;
+			top: 30px;
+		}
+		.grafic-wrapper-box--left {
+			left: 106%;
+		}
+		.grafic-wrapper-box--left2 {
+			top: 60%;
+		}
+	}
+	.section-foreign-experience-differences .title {
+		max-width: 450px;
+	}
+}
+@media (max-width: 960px) {
+	.section-foreign-experience-development {
+		.text-wrapper__item:nth-child(1) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			p {
+				flex-basis: 48%;
+				margin-top: 0;
+				margin-bottom: 10px;
+			}
+			p:nth-child(2) {
+				order: 1;
+			}
+		}
+	}
+	.foreign-experience-videos__item {
+		flex-basis: 100%;
+	}
+	.foreign-experience-videos__item + .foreign-experience-videos__item {
+		margin-top: 40px;
+	}
+	.foreign-experience-videos__item-img img {
+		width: 35px;
+		height: 35px;
+	}
+	.section-domestic-experience-research .research-text {
+		max-width: 100%;
+	}
+	.section-grafic2 {
+		.grafic-img {
+			width: 400px;
+			height: 380px;
+		}
+		.grafic-wrapper-box--right::after,
+		.grafic-wrapper-box--left::before {
+			width: 80px;
+		}
+		.grafic-wrapper-box {
+			width: 35%;
+		}
+		.section-inner {
+			padding-bottom: 220px;
+		}
+		.grafic-wrapper-box {
+			top: 36%;
+		}
+		.grafic-wrapper-box--right::after {
+			left: 55%;
+			top: -6px;
+		}
+		.grafic-wrapper-box--left {
+			left: 96%;
+		}
+		.grafic-wrapper-box--right {
+			right: 88%;
+		}
+		.grafic-wrapper-box--right::after,
+		.grafic-wrapper-box--left::before {
+			top: -6px;
+			right: 97%;
+		}
+		.grafic-wrapper-box--left::before {
+			right: 70%;
+		}
+		.grafic-wrapper-box--left2 {
+			bottom: 0;
+			top: 115%;
+			right: 0;
+			left: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			/* justify-content: center; */
+			margin: 0px auto;
+			max-width: 500px;
+			width: 80%;
+			text-align: center;
+		}
+		.grafic-wrapper-box--left2::before {
+			transform: rotate(-90deg);
+			right: 37%;
+			top: -48px;
+		}
+		p {
+			max-width: 587px;
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.section-foreign-experience .wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		p {
+			flex-basis: 48%;
+			margin-top: 0;
+		}
+	}
+	.section-foreign-experience .text {
+		padding-left: 17px;
+	}
+	.section-grafic2 {
+		.grafic-img {
+			width: 340px;
+			height: 320px;
+		}
+		.grafic-wrapper-box {
+			text-align: left;
+			top: 17%;
+			width: 30%;
+		}
+		.grafic-wrapper-box--left::before,
+		.grafic-wrapper-box--right::after {
+			display: block;
+		}
+		.grafic-wrapper-box--left2 {
+			top: 115%;
+		}
+		.grafic-wrapper-box--right::after,
+		.grafic-wrapper-box--left::before {
+			width: 100px;
+		}
+		.grafic-wrapper-box--left {
+			left: 92%;
+		}
+		.grafic-wrapper-box--right {
+			right: 85%;
+		}
+		.grafic-wrapper-box--left2 {
+			left: 0;
+			top: 122%;
+			width: 85%;
+			text-align: center;
+		}
+		.section-inner {
+			padding-bottom: 240px;
+		}
+		.grafic-wrapper-box--left2::before {
+			right: 32%;
+		}
+		.grafic-wrapper-box span {
+			font-size: 30px;
+			line-height: 40px;
+		}
+	}
+	.section-foreign-experience-development .text-wrapper__item:nth-child(1) p {
+		flex-basis: 100%;
+	}
+	.foreign-experience-videos__item-img {
+		height: 245px;
+	}
+	.section-foreign-experience-development .text-wrapper__item:nth-child(1) p {
+		margin-bottom: 0;
+	}
+	.section-foreign-experience-development .text-wrapper__item:nth-child(1) {
+		p + p {
+			margin-top: 10px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.section-grafic2 {
+		.grafic-wrapper-box--left::before,
+		.grafic-wrapper-box--right::after {
+			display: none;
+		}
+		.grafic-img {
+			width: 290px;
+			height: 360px;
+		}
+		.grafic-wrapper-box {
+			top: 5%;
+			text-align: center;
+			width: 44%;
+		}
+
+		.grafic-wrapper-box--left {
+			left: 63%;
+		}
+		.grafic-wrapper-box--right {
+			right: 63%;
+		}
+		.grafic-wrapper-box--left2 {
+			top: 85%;
+			left: 0;
+			width: 90%;
+		}
+		.grafic-wrapper-box span {
+			font-size: 23px;
+			line-height: 28px;
+		}
+		.section-inner {
+			padding-bottom: 45px;
+		}
+	}
+	.section-foreign-experience .wrapper p {
+		flex-basis: 100%;
+	}
+	.section-foreign-experience .wrapper {
+		p + p {
+			margin-top: 8px;
+		}
+	}
+	.section-foreign-experience .text {
+		margin: 20px 0 !important;
+	}
+	.foreign-experience-videos__item-img {
+		height: 200px;
+	}
+	.foreign-experience-videos__item-img img,
+	.foreign-experience-videos__item .city img {
+		width: 28px;
+		height: 28px;
+	}
+}
+
+@media (max-width: 340px) {
+	.section-grafic2 .grafic-wrapper-box--left {
+		left: 60%;
+	}
+	.section-grafic2 .grafic-wrapper-box--left2 {
+		left: 0;
+	}
+}

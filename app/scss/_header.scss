@@ -1,0 +1,383 @@
+
+.cssmenu {
+    padding: 0;
+    margin: 0;
+    
+    border: 0;
+    // width: 100%;
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cssmenu .padding {
+    padding-left: 55px;
+}
+.cssmenu ul,
+.cssmenu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cssmenu ul {
+    position: relative;
+    z-index: 597;
+    display: flex;
+}
+
+.cssmenu ul li {
+    
+    min-height: 1px;
+    vertical-align: middle;
+}
+
+.cssmenu ul li.hover,
+.cssmenu ul li:hover {
+    position: relative;
+    z-index: 599;
+    cursor: default;
+}
+
+.cssmenu ul ul {
+    // visibility: hidden;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 598;
+    width: 100%;
+}
+
+.cssmenu ul ul li {
+    float: none;
+}
+
+.cssmenu ul ul ul {
+    top: 0;
+    left: auto;
+    right: -99%;
+   
+}
+
+.cssmenu ul li:hover>ul {
+    // visibility: visible;
+    display: block;
+}
+
+.cssmenu ul ul {
+    bottom: 0;
+    left: 0;
+}
+
+.cssmenu ul ul {
+    margin-top: 0;
+}
+
+.cssmenu ul ul li {
+    font-weight: normal;
+}
+
+.cssmenu a {
+    display: block;
+    line-height: 1em;
+    text-decoration: none;
+}
+
+.cssmenu {
+    background: #000;
+    // border-bottom: 4px solid #1b9bff;
+    font-size: 16px;
+}
+
+// .cssmenu>ul {
+//     *display: inline-block;
+// }
+
+// .cssmenu:after,
+// .cssmenu ul:after {
+//     content: '';
+//     display: block;
+//     clear: both;
+// }
+
+.cssmenu a {
+    background: #000;
+    color: #CBCBCB;
+    padding: 0 20px;
+}
+
+.cssmenu ul {
+    // text-transform: uppercase;
+}
+
+.cssmenu ul ul {
+    height: fit-content;
+    text-transform: none;
+    min-width: 268px;
+    box-shadow: 4px 4px 10px rgba(51, 51, 51, 0.25);
+    padding: 10px 0;background: #fff;
+}
+
+.cssmenu ul ul a {
+    
+    color: #333333;
+    background: #fff;
+    // border-top: 0 none;
+    line-height: 150%;
+    padding: 5px 20px;
+}
+
+.cssmenu ul ul ul {
+    // border-top: 0 none;
+}
+
+.cssmenu ul ul li {
+    position: relative
+}
+
+.cssmenu>ul>li>a {
+    line-height: 78px;
+}
+
+.cssmenu ul ul li:first-child>a {
+    // border-top: 1px solid #0082e7;
+}
+
+.cssmenu ul ul li:hover>a {
+    // background: #35a6ff;
+    color: red;
+}
+
+.cssmenu ul ul li:last-child>a {
+    border-radius: 0 0 3px 3px;
+    // box-shadow: 0 1px 0 #1b9bff;
+}
+
+.cssmenu ul ul li:last-child:hover>a {
+    border-radius: 0 0 0 3px;
+}
+
+.cssmenu ul ul li.has-sub>a:after {
+    content: '';
+    position: absolute;
+    background-image: url('../images/toggle.svg');
+    background-size: contain;
+    top: 50%;
+    width: 10px;
+    height: 14px;
+    right: 15px;
+    margin-top: -8px;
+}
+
+.cssmenu ul li:hover>a,
+.cssmenu ul li.active>a {
+    // background: #1b9bff;
+    color: red;
+}
+
+// .cssmenu ul li.has-sub>a:after {
+//     content: '+';
+//     margin-left: 5px;
+// }
+
+.cssmenu ul li.last ul {
+    left: auto;
+    right: 0;
+}
+
+.cssmenu ul li.last ul ul {
+    left: auto;
+    right: 99.5%;
+}
+.hide 
+{
+    display: none;
+}
+// .header 
+.header-bottom
+{
+    .cssmenu>ul>li>a {
+        line-height: 56px;
+    }
+    background: #4C4C4C;
+    .cssmenu ul li .first-link
+    {
+        padding-left: 0px;
+    }
+    // padding: 0 15px;
+    .section-inner {
+        padding-top: 0px;
+        padding-bottom: 0px;
+position: relative;
+        z-index: 9;
+        display: flex;
+    }
+        
+        // justify-content: space-evenly;
+    .cssmenu
+    {
+        background: #4C4C4C;
+        min-height: 56px;
+    }
+    .cssmenu a
+    {
+        background: #4C4C4C;
+        
+    }
+    .cssmenu ul ul {
+
+        background: #fff;
+    }
+    .cssmenu ul ul a {
+
+        background: #fff;
+    }
+    button
+    {
+        background: #4C4C4C;
+        margin-left: 220px;
+    }
+}
+.breadcrums
+{
+    border-bottom: 1px solid rgba(51, 51, 51, 0.54);
+    .section-inner {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        color: #333333;
+        
+    }
+    .breadcrumbs__list
+    {
+        display: flex;
+        
+    }
+    .and 
+    {
+        margin: 0 5px;
+    }
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 35px;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    z-index: 99;
+}
+.container {
+    position: absolute;
+    height: 200px;
+    top: 0;
+    z-index: 9;
+    right: 0;
+    // width: 400px;
+    // width: 300px;
+    height: 100%;
+
+    background: #000;
+    // border: 2px solid #600f4e;
+    ul {
+        margin: 0;
+        padding: 0;
+        padding-top: 17px;
+        background-color: #000;
+    }
+    .nav-link
+    {
+        margin-bottom: 30px;
+        display: inline !important;
+        img 
+        {
+            margin-right: 10px;
+        }
+    }
+    .nav-title
+    {
+        color: #fff;
+    }
+    a {
+        text-decoration: none;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        outline: none;
+        color: #f3efe0;
+        font-size: 16px;
+        // border-bottom: 1px solid #600f4e;
+    }
+    li 
+    {
+        padding: 7px 49px;
+    }
+    ul li {
+        color: #333;
+        list-style: none;
+        margin: 0;
+        // padding: 0;
+        background: #000;
+
+    }
+
+    ul li a:hover {
+        background-color: #000;
+    }
+
+    li span {
+        font-size: 1.5em;
+        line-height: .25em;
+    }
+
+    .hide {
+        margin-left: -300px;
+        transition: all 0.8s ease;
+    }
+
+    .side-menu {
+        position: absolute;
+        top: 0px;
+        background: #eeeeee;
+        color: white;
+        width: 299px;
+        height: 350px;
+        background: transparent;
+        background-color: #000;
+    }
+
+    .side-menu ul {
+        // border-top: 1px solid #600f4e;
+    }
+
+    .side-menu ul li a {
+        background-color: #000;
+            color: rgba(255, 255, 255, 0.54);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    }
+
+    .side-menu:last-child ul li a {
+        background-color: #000;
+    }
+
+    .show-menu {
+        margin-left: 0 !important;
+        display: block;
+    }
+
+}
+

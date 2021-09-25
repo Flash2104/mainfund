@@ -1,0 +1,1311 @@
+@media (max-width: 1670px) {
+	.logo {
+		display: none;
+	}
+	.logo-mobile {
+		display: block;
+	}
+	.header .city {
+		width: 120px;
+		margin-right: 15px;
+	}
+	.cssmenu a {
+		padding: 0 12px;
+	}
+	.cssmenu .padding {
+		padding-left: 0;
+	}
+	.header-bottom .section-inner,
+	.breadcrums .section-inner {
+		max-width: 1235px;
+	}
+}
+@media (max-width: 1338px) {
+	.cssmenu ul,
+	.header-bottom {
+		display: none;
+	}
+	.logo-link {
+		display: flex !important;
+		.city {
+			margin-left: 54px;
+		}
+	}
+	.header-bottom .section-inner,
+	.breadcrums .section-inner {
+		max-width: 900px;
+	}
+	.menu__btn {
+		display: block;
+	}
+	// .header .box
+	// {
+	//         flex-grow: 1;
+	// }
+}
+@media (max-width: 1200px) {
+	.section-inner {
+		max-width: 990px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.section-photo-slider .slick-slider .slick-track,
+	.section-photo-slider .photo-slider,
+	.section-photo-slider .slick-slider .slick-list,
+	.section-photo-slider .slick-slide img,
+	.section-photo-slider .slick-slide {
+		height: 300px;
+	}
+	.geology-services .geology-services-list li {
+		max-width: 375px;
+		line-height: 35px;
+	}
+	.geology-services .geology-services-list li:nth-child(5),
+	.geology-services .geology-services-list li:nth-child(1) {
+		max-width: 675px;
+	}
+	.geology-services {
+		height: 640px;
+	}
+	.geology-services .geology-services-list__item + .geology-services-list__item {
+		margin-top: 35px;
+	}
+	.geology-services .circle {
+		right: -66px;
+	}
+	.partners .partners-warapper .partners-warapper__item {
+		flex-basis: 42%;
+	}
+	.map .right-table {
+		min-width: 400px;
+	}
+	.section-order .order-list__item:nth-child(1) {
+		padding-left: 20px;
+	}
+	.section-order .order-list__item {
+		padding-right: 20px;
+	}
+	// .accordion-wrapper__item:nth-child(2), .accordion-wrapper__item:nth-child(3)
+	// {
+	//     text-align: center;
+	//     a
+	//     {
+	//         text-align: left;
+	//     }
+	// }
+	.section-accordion .accordion-wrapper__item {
+		width: auto;
+	}
+	.section-order .section-inner:nth-child(2) {
+		max-width: 100%;
+	}
+	// .order-list .slick-track
+	// {
+	//     transform: translate3d(284px, 0px, 0px) ;
+	// }
+	// .slick-slide {
+	//     opacity: 0;
+	// }
+
+	// .slick-slide.slick-current {
+	//     opacity: 1;
+	// }
+	.section-need .section-inner__title h4 {
+		max-width: 466px;
+	}
+	.section-need .grafic-wrapper-box {
+		max-width: 150px;
+	}
+	.section-example ul {
+		justify-content: space-between;
+	}
+	.title {
+		padding-left: 12px;
+	}
+	.section-video .tab-item {
+		width: 100%;
+	}
+	.section-video .tab-box-wrapper {
+		height: 350px;
+	}
+	.section-video .video {
+		height: 337px;
+	}
+	.screw-list__item:not(.show) {
+		display: none;
+	}
+	.section-screw .screw-list__item {
+		height: 280px;
+		margin-bottom: 50px;
+		flex-basis: 32%;
+	}
+	.section-screw h6 {
+		max-width: 209px;
+		margin: 0px auto;
+		margin-bottom: 10px;
+	}
+	.section-rating h6 {
+		margin-right: 40px;
+	}
+	.section-need .grafic-wrapper-box--right {
+		right: 100%;
+	}
+	.section-need .grafic-wrapper-box--left {
+		left: 100%;
+	}
+	.section-need .grafic-wrapper-box--right::after {
+		background-position: right;
+		width: 80px;
+		height: 3px;
+		left: 125%;
+		top: 75px;
+	}
+	.section-need .grafic-wrapper-box--left::before {
+		background-position: right;
+		width: 80px;
+		height: 3px;
+		right: 125%;
+		top: 75px;
+	}
+	.section-need .grafic-img {
+		height: 550px;
+	}
+	.section-stages .stages-item + .stages-item {
+		margin-top: 55px;
+	}
+	.slider-controls {
+		padding-top: 70px;
+	}
+}
+
+// ПЛАНШЕТ
+@media (max-width: 960px) {
+	h5 {
+		font-size: 16px;
+	}
+	.section-inner {
+		max-width: 670px;
+		// padding-top: 50px;
+		// padding-bottom: 50px;
+	}
+	.section-main-screen h1 {
+		font-size: 38px;
+	}
+	h3 {
+		font-size: 23px;
+	}
+	.section-main-screen {
+		height: 400px;
+	}
+	.section-main-screen .info img {
+		width: 43px;
+		height: 41px;
+	}
+	.geology-services {
+		height: auto;
+	}
+	.geology-services .geology-services-list li:nth-child(5),
+	.geology-services .geology-services-list li:nth-child(1),
+	.geology-services .geology-services-list li {
+		max-width: 100%;
+	}
+	.geology-services .circle {
+		position: unset;
+		height: 514px;
+	}
+	.section-inner-wrapper {
+		flex-direction: column;
+	}
+	.geology-services .geology-services-list__item {
+		font-size: 23px;
+	}
+	.geology-services .geology-services-list {
+		margin-bottom: 0;
+	}
+	.geology-services .download {
+		font-size: 14px;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		margin: 0px auto;
+	}
+	.geology-services .geology-services-list__item + .geology-services-list__item {
+		margin-top: 20px;
+	}
+	.geology-services .circle {
+		margin: 0px auto;
+		font-size: 23px;
+
+		span {
+			font-size: 38px;
+			margin-top: 10px;
+		}
+	}
+	table.iksweb {
+		font-size: 16px;
+	}
+	table.iksweb .top td {
+		max-width: 84px;
+	}
+	table.iksweb td,
+	table.iksweb th {
+		padding: 18px 0;
+	}
+	h2 {
+		font-size: 28px;
+		line-height: 38px;
+	}
+	// .price-table h2 {
+	// 	margin-bottom: 34px;
+	// }
+	.send-form .form {
+		font-size: 16px;
+	}
+	.send-form .phone-info {
+		display: none;
+	}
+	.send-form .permit {
+		font-size: 12px;
+	}
+	.form-btn {
+		font-size: 14px;
+	}
+	.map .right-table {
+		display: none;
+	}
+	.map .map-inner svg {
+		height: 400px;
+	}
+	.footer {
+		font-size: 14px;
+	}
+	.footer-box:nth-child(4) {
+		max-width: 155px;
+	}
+	.footer .pays a {
+		flex-basis: 50%;
+	}
+	.footer .social {
+		width: 30px;
+		height: 30px;
+	}
+	.pays img {
+		width: 60px;
+		height: 32px;
+	}
+	.footer .socials {
+		max-width: 150px;
+		margin-bottom: 30px;
+	}
+	.footer .pays {
+		max-width: 245px;
+	}
+	.footer-box:nth-child(3) {
+		margin-right: 57px;
+	}
+	.footer-box:nth-child(1),
+	.footer-box:nth-child(2) {
+		margin-right: 30px;
+	}
+	.footer .politics {
+		align-items: center;
+		font-size: 10px;
+	}
+	.footer .info {
+		font-size: 10px;
+	}
+	.footer .footer-box h6 {
+		font-size: 14px;
+	}
+	.footer .footer-box li + li {
+		margin-top: 10px;
+	}
+	.header-bottom .section-inner,
+	.breadcrums .section-inner {
+		max-width: 640px;
+	}
+	.header .info,
+	.logo-link .city {
+		font-size: 14px;
+	}
+	.logo-link .city img {
+		width: 24px;
+		height: 24px;
+	}
+	.breadcrums .breadcrumbs__list {
+		font-size: 14px;
+	}
+	.menu__btn-line {
+		width: 30px;
+	}
+	.container a,
+	.container .nav-title {
+		font-size: 14px;
+	}
+	.sidenav .closebtn {
+		width: 15px;
+		height: 15px;
+		img {
+			width: 100%;
+		}
+	}
+	.cssmenu {
+		min-height: 60px;
+	}
+	.section-need .section-inner__title h4 {
+		max-width: 338px;
+	}
+
+	h4 {
+		font-size: 23px;
+		line-height: 33px;
+	}
+	.section-need .section-inner__title h2 {
+		max-width: 191px;
+	}
+	.section-need .grafic-wrapper-box span {
+		font-size: 38px;
+		line-height: 48px;
+	}
+	.section-need .grafic-wrapper-box--left::before,
+	.section-need .grafic-wrapper-box--right::after {
+		width: 80px;
+		top: -10px;
+		background-position: right;
+	}
+	.section-need .grafic-wrapper-box--left::before {
+		right: 59%;
+	}
+	.section-need .grafic-wrapper-box--right::after {
+		left: 59%;
+	}
+	.section-need .grafic-wrapper-box {
+		margin-top: 160px;
+	}
+	.section-need .grafic-wrapper-box--right {
+		right: 89%;
+	}
+	.section-need .grafic-wrapper-box--left {
+		left: 89%;
+	}
+	.section-need .grafic-img {
+		height: 440px;
+		width: 450px;
+		background-size: 112%;
+	}
+	.section-need .grafic-img .circle {
+		max-width: 246px;
+	}
+	//  .line.hide {
+	//
+	//  }
+	.section-example ul {
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+		margin-bottom: 33px;
+		font-size: 23px;
+	}
+	.section-example li:nth-child(3) {
+		padding-right: 0;
+		a::after {
+			display: none;
+		}
+	}
+	.section-example li {
+		flex-basis: 30%;
+		margin-bottom: 13px;
+	}
+	.section-example .btn {
+		font-size: 14px;
+	}
+	.section-example h2 {
+		max-width: 404px;
+		margin-bottom: 27px;
+	}
+	.section-example {
+		margin: 60px 0;
+	}
+	.section-video .tabs-wrapper {
+		flex-direction: column;
+	}
+
+	.section-video .tabs-content {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.section-video .video {
+		height: 300px;
+	}
+
+	.section-video .tabs .tab-box-wrapper {
+		width: 100%;
+	}
+
+	.section-video .tabs .tab-box-wrapper img {
+		width: 45%;
+		height: 136px;
+		object-fit: cover;
+	}
+
+	.section-video .tabs .tab-box-wrapper .tab {
+		display: flex;
+		align-items: center;
+		padding-left: 20px;
+	}
+
+	.section-video .tab h6 {
+		max-width: 220px;
+	}
+
+	h6 {
+		font-size: 14px;
+	}
+
+	.section-video .tab + .tab {
+		margin-top: 30px;
+	}
+
+	.section-video .tab-box-wrapper {
+		overflow-y: unset;
+		height: auto;
+	}
+
+	.section-video .tabs .tab-box-wrapper .tab:not(.show) {
+		display: none;
+	}
+
+	.section-video .show-more {
+		display: block;
+		margin: 20px 0;
+		padding-left: 20px;
+		font-size: 14px;
+	}
+	.section-screw p,
+	.section-screw h6 {
+		font-size: 16px;
+		margin-bottom: 10px;
+		line-height: 21px;
+	}
+	.section-screw .screw-list__item {
+		padding-top: 30px;
+	}
+	.section-more h6,
+	.section-more ul {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.btn-red {
+		font-size: 14px;
+		padding: 14px 17px;
+	}
+	.section-statics ul span {
+		font-size: 28px;
+	}
+	.section-rating h6 {
+		margin-right: 30px;
+		font-size: 16px;
+	}
+	.rating-btn img {
+		width: 17px;
+	}
+	.rating-btn span {
+		font-size: 14px;
+	}
+	.section-order .order-list__item h5,
+	.section-order .order-list__item p {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.section-order .order-list__item-number {
+		margin-bottom: 20px;
+		font-size: 23px;
+	}
+	.section-order .order-list__item p {
+		margin-bottom: 15px;
+	}
+	.section-order .order-list .img {
+		width: 90px;
+		height: 80px;
+	}
+	.more {
+		font-size: 14px;
+	}
+	.more img {
+		width: 29px;
+	}
+	.section-order .order-list__item {
+		padding-top: 20px;
+	}
+	.section-order .section-inner {
+		padding-bottom: 10px;
+	}
+	.section-accordion .accordion-wrapper {
+		flex-direction: column;
+	}
+	.section-accordion .accordion-wrapper__item:nth-child(2),
+	.section-accordion .accordion-wrapper__item:nth-child(3) {
+		text-align: left;
+	}
+	.accordion-wrapper__item + .accordion-wrapper__item {
+		margin-top: 10px;
+	}
+	.section-order .section-inner {
+		padding-top: 40px;
+	}
+	.section-accordion .accordion {
+		font-size: 23px;
+	}
+	.section-accordion .panel {
+		font-size: 16px;
+		max-width: 300px;
+		left: 0;
+	}
+	.section-accordion .panel a {
+		padding: 10px;
+	}
+	.section-stages p {
+		font-size: 16px;
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
+	.section-stages .stages-item h2 img {
+		margin-right: 13px;
+		width: 60px;
+		height: 60px;
+	}
+	.section-stages .stages-item h2 {
+		margin-bottom: 30px;
+	}
+	.section-stages .stages-item + .stages-item {
+		margin-top: 24px;
+	}
+	.photo-slider {
+		position: unset !important;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.photo-slider__inner {
+		flex-direction: column;
+	}
+	.slider-controls {
+		padding-top: 0;
+	}
+	.photo-slider__inner-box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+	.photo-slider .slick-slide {
+		margin-right: 0;
+	}
+	.photo-slider__inner h3 {
+		padding-top: 0;
+	}
+	.section-photo-slider {
+		height: auto;
+	}
+	.slick-arrow img {
+		width: 22px;
+	}
+	.slider-controls__left {
+		margin-right: 40px;
+	}
+}
+// ТЕЛЕФОН
+@media (max-width: 640px) {
+	.section-inner {
+		max-width: 510px;
+	}
+	.section-main-screen h1 {
+		font-size: 30px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	.section-main-screen {
+		height: 300px;
+	}
+	.section-main-screen .info img {
+		width: 38px;
+		height: 36px;
+	}
+	.geology-services .geology-services-list__item {
+		font-size: 19px;
+	}
+	.geology-services .geology-services-list__item::before {
+		width: 20px;
+		height: 20px;
+		top: 8px;
+	}
+	.geology-services .geology-services-list__item {
+		padding-left: 30px;
+	}
+	.geology-services .circle {
+		width: 100%;
+		height: 450px;
+		font-size: 20px;
+		span {
+			font-size: 30px;
+		}
+	}
+	.table {
+		overflow-x: scroll;
+		&::-webkit-scrollbar-track {
+			-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+			box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+			background-color: #f5f5f5;
+		}
+
+		&::-webkit-scrollbar {
+			width: 100px;
+			height: 2px;
+			background-color: #f5f5f5;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+			box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+			background-color: #fe0000;
+		}
+	}
+	table.iksweb {
+		width: 640px;
+	}
+	h2 {
+		font-size: 25px;
+		line-height: 35px;
+	}
+	// .price-table h2 {
+	// 	margin-bottom: 26px;
+	// }
+	.partners-warapper__item img {
+		width: auto;
+		height: 40px;
+	}
+	.partners .partners-warapper .partners-warapper__item {
+		margin-bottom: 39px;
+	}
+	.map .map-inner svg {
+		height: 300px;
+	}
+	.footer .section-inner {
+		flex-wrap: wrap;
+	}
+	.footer-box {
+		width: 50%;
+	}
+	.footer-box:nth-child(1),
+	.footer-box:nth-child(2) {
+		margin-right: 0px;
+	}
+	.footer-box:nth-child(4) {
+		max-width: 100%;
+	}
+	.footer .socials {
+		max-width: 100%;
+		margin-top: 30px;
+	}
+	.footer .socials a {
+		flex-basis: 20%;
+	}
+	.footer .pays {
+		max-width: 100%;
+	}
+	.footer .pays a {
+		flex-basis: 33%;
+	}
+	.footer .politics {
+		max-width: 134px;
+	}
+	.footer-box:nth-child(3) {
+		margin-right: 0;
+	}
+
+	.footer-box4,
+	.footer-box3 {
+		width: 100%;
+	}
+	// .header .box
+	// {
+	//     display: none;
+	// }
+	.header-bottom .section-inner,
+	.breadcrums .section-inner {
+		max-width: 480px;
+	}
+	.header-mobile {
+		background: #000;
+		.inner {
+			max-width: 480px;
+			margin: 0px auto;
+			padding: 10px 15px;
+		}
+	}
+	.header .box {
+		justify-content: flex-start;
+	}
+	.section-example ul {
+		margin-bottom: 20px;
+		font-size: 20px;
+	}
+	.section-example li::after {
+		width: 30px;
+		height: 1px;
+	}
+	.section-video .video {
+		height: 245px;
+	}
+
+	.video img {
+		width: 35px;
+		height: 35px;
+	}
+	.section-video .tabs .tab-box-wrapper img {
+		height: 99px;
+	}
+	.section-screw h2 {
+		max-width: 280px;
+	}
+	.section-screw .screw-list__item:not(:first-child) {
+		display: none;
+	}
+	.section-screw .screw-list__item {
+		flex-basis: 100%;
+		display: flex;
+		max-width: 100%;
+		height: 100%;
+		min-height: 200px;
+		img {
+			max-width: 191px;
+		}
+	}
+	.screw-list__item-inner {
+		position: relative;
+		text-align: left;
+		padding-left: 20px;
+	}
+	.section-screw .read {
+		left: 20px;
+	}
+	.section-screw h6 {
+		max-width: 100%;
+	}
+	.section-screw .screw-list__item-img {
+		display: block;
+	}
+	.section-screw .screw-list__item {
+		padding-top: 15px;
+		margin-bottom: 30px;
+	}
+	.section-more .section-more-wrapper {
+		flex-direction: column;
+	}
+	.section-more .section-more-wrapper__item:nth-child(1) {
+		margin-right: 0;
+	}
+	.section-more .section-more-wrapper__item {
+		width: 100%;
+	}
+	.section-more h2 {
+		margin-bottom: 27px;
+	}
+	.section-more .btn-red {
+		margin: 0px auto;
+		text-align: center;
+		display: flex;
+	}
+	.section-more-wrapper__item + .section-more-wrapper__item {
+		margin-top: 10px;
+	}
+	.section-statics ul span {
+		font-size: 25px;
+		line-height: 35px;
+	}
+	.section-statics ul .li-top img {
+		width: 35px;
+		height: 35px;
+	}
+	.section-rating .rating-wrapper {
+		max-width: 375px;
+	}
+	.section-rating .rating-btns .rating-btn + .rating-btn {
+		margin-left: 18px;
+	}
+	.section-need .grafic-img {
+		width: 370px;
+		height: 350px;
+	}
+	h4 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.section-need .grafic-wrapper-box--left::before,
+	.section-need .grafic-wrapper-box--right::after {
+		display: none;
+	}
+	.section-need .grafic-img .circle {
+		max-width: 210px;
+	}
+	.section-need .section-inner__title h4 {
+		max-width: 241px;
+	}
+	.section-need .section-inner {
+		padding-bottom: 200px;
+	}
+	.section-need .grafic-wrapper-box {
+		text-align: center;
+		max-width: 190px;
+		width: 55%;
+	}
+	.section-need .grafic-wrapper-box--right {
+		right: 55%;
+		top: 55%;
+	}
+	.section-need .grafic-wrapper-box--left {
+		left: 55%;
+		top: 55%;
+	}
+	.section-order .section-inner:nth-child(2) {
+		width: 70%;
+	}
+	.section-accordion .accordion {
+		font-size: 20px;
+	}
+	.section-stages .stages-item__inner {
+		flex-direction: column;
+	}
+	.section-stages .stages-item h2 img {
+		width: 50px;
+		height: 50px;
+		margin-right: 20px;
+	}
+	.section-stages .stages-item h2 {
+		max-width: 433px;
+	}
+	.stages-item__box + .stages-item__box {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.section-inner {
+		max-width: 350px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.section-main-screen h1 {
+		font-size: 23px;
+	}
+	h2 {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	h3 {
+		font-size: 17px;
+		line-height: 22px;
+	}
+	h5 {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.section-main-screen .info img {
+		width: 35px;
+		height: 33px;
+	}
+	.section-main-screen .info {
+		margin-top: 20px;
+	}
+	.geology-services .circle {
+		height: 299px;
+		font-size: 17px;
+		span {
+			font-size: 23px;
+		}
+	}
+	.geology-services .geology-services-list__item {
+		font-size: 17px;
+	}
+	.geology-services .geology-services-list li {
+		line-height: 22px;
+	}
+	.geology-services .geology-services-list li:nth-child(5),
+	.geology-services .geology-services-list li:nth-child(1),
+	.geology-services .geology-services-list li {
+		max-width: 250px;
+	}
+	.geology-services .geology-services-list__item::before {
+		width: 15px;
+		height: 15px;
+		top: 4px;
+	}
+	.geology-services .geology-services-list__item {
+		padding-left: 25px;
+	}
+	.section-main-screen .info {
+		font-size: 16px;
+	}
+	table.iksweb {
+		font-size: 14px;
+	}
+	table.iksweb .top td {
+		max-width: 54px;
+	}
+	.send-form .form {
+		font-size: 14px;
+	}
+	.form-btn {
+		font-size: 12px;
+	}
+	.send-form .permit {
+		font-size: 8px;
+	}
+	.send-form .form-group textarea {
+		height: 100px;
+	}
+	.send-form .form-btn {
+		padding: 10px 20px;
+	}
+	.send-form .form {
+		padding: 15px;
+	}
+	.btn-tertiary {
+		margin-left: 8px;
+	}
+	.partners-warapper__item img {
+		height: 25px;
+	}
+	.partners .partners-warapper .partners-warapper__item {
+		margin-bottom: 20px;
+	}
+
+	.map .map-inner svg {
+		height: 200px;
+	}
+	table.iksweb td,
+	table.iksweb th {
+		padding: 16.5px 0;
+	}
+	.footer {
+		font-size: 12px;
+	}
+	.footer .footer-box h6 {
+		font-size: 12px;
+	}
+	.footer-box {
+		width: 45%;
+	}
+	.footer .social {
+		width: 25px;
+		height: 25px;
+		img {
+			width: 100%;
+		}
+	}
+	.footer-box4,
+	.footer-box3 {
+		width: 100%;
+	}
+	.footer .socials a {
+		margin-bottom: 10px;
+		flex-basis: 26%;
+	}
+	.pays img {
+		width: 52px;
+		height: 28px;
+	}
+	.footer .pays a {
+		margin-bottom: 10px;
+		flex-basis: 46%;
+	}
+	.footer .info {
+		margin-top: 20px;
+	}
+	.header-bottom .section-inner,
+	.breadcrums .section-inner,
+	.header-mobile .inner {
+		max-width: 350px;
+	}
+	.header .info img {
+		width: 16px;
+		height: 24px;
+		margin-right: 12px;
+	}
+	.header .info,
+	.logo-link .city {
+		font-size: 12px;
+		line-height: 15px;
+	}
+	.logo-link .city {
+		margin-left: 36px;
+	}
+	.header .info + .info {
+		margin-left: 17px;
+	}
+	.header .box {
+		padding-right: 0;
+	}
+	.breadcrums .breadcrumbs__list {
+		font-size: 12px;
+	}
+
+	.breadcrums .section-inner {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.header .info {
+		font-size: 11px;
+		line-height: 12px;
+	}
+	.logo-mobile {
+		width: 30px;
+		height: 20px;
+	}
+	.menu__btn-line {
+		width: 23px;
+	}
+	.menu__btn-line + .menu__btn-line {
+		margin-top: 8px;
+	}
+	.menu__btn-line:nth-child(2) {
+		margin-left: 7px;
+	}
+	.container a,
+	.container .nav-title {
+		font-size: 12px;
+	}
+	.section-example ul {
+		justify-content: space-between;
+		font-size: 17px;
+		margin-bottom: 0;
+	}
+	.section-example li:nth-child(3) {
+		padding-right: 70px;
+		a::after {
+			display: block;
+		}
+	}
+	.section-example li:last-child {
+		padding-right: 70px;
+
+		a::after {
+			display: block;
+		}
+	}
+	.section-example li a::after {
+		background-image: url("../images/vector.svg");
+		width: 26px;
+		height: 12px;
+		background-color: transparent;
+		background-size: contain;
+		background-repeat: no-repeat;
+		right: 35px;
+		top: 7px;
+	}
+	.section-example h2 {
+		margin-bottom: 10px;
+	}
+	.section-example {
+		margin: 40px 0;
+	}
+	.section-example li:nth-child(3),
+	.section-example li,
+	.section-example li:last-child {
+		padding-right: 60px;
+		a::after {
+			right: 25px;
+			top: 4px;
+		}
+	}
+	.section-video .video {
+		height: 200px;
+	}
+	.section-video .tabs .tab-box-wrapper img {
+		height: 85px;
+		width: 50%;
+	}
+	h6 {
+		font-size: 12px;
+	}
+	.section-video .tab h6 {
+		padding: 0px 0 0 12px;
+	}
+	.section-screw .screw-list__item {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.screw-list__item-inner {
+		text-align: center;
+	}
+	.section-screw .screw-list__item img {
+		margin-bottom: 10px;
+		width: 100%;
+		max-width: 200px;
+		height: 111px;
+	}
+	.section-screw p,
+	.section-screw h6 {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.section-screw .read {
+		left: 0;
+		bottom: -14px;
+		font-size: 12px;
+	}
+	.btn-red {
+		font-size: 12px;
+		padding: 12px;
+	}
+	.section-more h2 {
+		margin-bottom: 10px;
+	}
+	.section-more h6,
+	.section-more ul {
+		font-size: 14px;
+	}
+	.section-more h6 {
+		margin-bottom: 10px;
+	}
+	.section-statics ul {
+		flex-direction: column;
+		li + li {
+			margin-top: 26px;
+		}
+	}
+	.section-statics ul span {
+		font-size: 20px;
+		line-height: 26px;
+		border-top: 1px solid $dark;
+		width: 100px;
+		padding-top: 9px;
+	}
+	.section-statics ul .li-top {
+		flex-direction: column;
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+	.section-statics ul .li-top img {
+		margin-bottom: 16px;
+		margin-right: 0;
+	}
+	.section-statics ul li h6 {
+		padding-top: 0;
+	}
+	.section-rating h6 {
+		font-size: 14px;
+	}
+	.rating-btn img {
+		width: 14px;
+	}
+	.rating-btn span {
+		font-size: 12px;
+	}
+	.section-rating h6 {
+		margin-right: 6px;
+	}
+	h4 {
+		font-size: 17px;
+		line-height: 22px;
+	}
+	.section-need .section-inner__title h4 {
+		max-width: 145px;
+	}
+	.section-need .grafic-wrapper-box span {
+		font-size: 23px;
+		line-height: 28px;
+	}
+	.section-need .grafic-wrapper-box {
+		width: 51%;
+	}
+	.section-need .section-inner {
+		padding-bottom: 100px;
+	}
+	.section-need .grafic-wrapper-box--left,
+	.section-need .grafic-wrapper-box--right {
+		top: 40%;
+	}
+	.section-need .grafic-img .circle {
+		max-width: 175px;
+	}
+	.section-need .grafic-img {
+		height: 312px;
+	}
+	.section-order .order-list__item h5,
+	.section-order .order-list__item p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.section-order .order-list__item-number {
+		font-size: 17px;
+		margin-bottom: 10px;
+	}
+	.more {
+		font-size: 12px;
+	}
+	.more img {
+		width: 21px;
+	}
+	.section-accordion .accordion {
+		font-size: 17px;
+		line-height: 22px;
+	}
+	.section-accordion .accordion::after {
+		top: 7px;
+	}
+	.accordion-wrapper__item + .accordion-wrapper__item {
+		margin-top: 20px;
+	}
+	.section-accordion .panel {
+		font-size: 14px;
+	}
+	.section-accordion .panel a {
+		padding: 10px;
+	}
+	.section-stages p {
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 8px;
+	}
+	.dot::before {
+		width: 7px;
+		height: 7px;
+		top: 6px;
+	}
+	.section-stages .stages-item h2 img {
+		width: 43px;
+		height: 43px;
+	}
+	.section-stages .stages-item + .stages-item {
+		margin-top: 20px;
+	}
+	.section-stages .stages-item h2 {
+		margin-bottom: 10px;
+	}
+	// .section-main-screen__heading .info span {
+	// 	width: min-content;
+	// }
+	.photo-slider {
+		width: 100%;
+	}
+	.section-photo-slider h2,
+	.photo-slider__inner-box {
+		margin-bottom: 15px;
+	}
+	.slick-arrow img {
+		width: 19px;
+	}
+	.slider-controls__left {
+		margin-right: 30px;
+	}
+	.section-photo-slider .slick-slider .slick-track,
+	.section-photo-slider .photo-slider,
+	.section-photo-slider .slick-slider .slick-list,
+	.section-photo-slider .slick-slide img,
+	.section-photo-slider .slick-slide {
+		height: 200px;
+	}
+}

@@ -1,0 +1,363 @@
+.section-geotechnics {
+	p {
+		margin-bottom: 60px;
+	}
+}
+
+.geotechnics-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__item {
+		flex-basis: 48.2%;
+		background: #4c4c4c;
+		border-radius: 10px;
+		transition: all 0.3s ease 0s;
+		&:nth-child(1),
+		&:nth-child(2) {
+			margin-bottom: 50px;
+		}
+		&:hover {
+			background: linear-gradient(133.57deg, #fe0000 0.24%, #ffd1d4 0.25%, rgba(254, 0, 0, 0.75) 95.2%);
+		}
+		a {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			min-height: 370px;
+			padding: 40px;
+		}
+		img {
+			width: 25px;
+			height: 37px;
+		}
+		h2 {
+			color: $white;
+			min-width: 400px;
+		}
+	}
+}
+
+.section-inner.no-pad {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.section-geotechnics-news {
+	.tab-item-wrapper:nth-child(1) {
+		border-top: 1px solid rgba(51, 51, 51, 0.54);
+	}
+	.tab-item-wrapper {
+		border-bottom: 1px solid rgba(51, 51, 51, 0.54);
+		padding: 20px 0;
+	}
+	.tab {
+		cursor: pointer;
+	}
+	.tabs {
+		font-size: 30px;
+		margin-bottom: 40px;
+		// .section-inner {
+		// 	padding-left: 37px;
+		// }
+		.tab.active {
+			font-weight: 700;
+		}
+		.tab + .tab {
+			margin-left: 30px;
+		}
+	}
+}
+
+.geotechnics-news-box {
+	display: flex;
+	justify-content: space-between;
+
+	&__item {
+		&:nth-child(1) {
+			width: 45%;
+		}
+		&:nth-child(2) {
+			width: 53%;
+		}
+		width: 50%;
+		span {
+			font-size: 50px;
+			font-weight: 700;
+			line-height: 60px;
+		}
+		h2 {
+			font-weight: 700;
+		}
+	}
+	&__item-date h2 {
+		font-weight: 400;
+	}
+	&__item-text {
+		border-left: 5px solid #333333;
+		padding: 20px 0 20px 20px;
+		min-height: 255px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		h2 {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.border-wrapper {
+	position: relative;
+	width: fit-content;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	.border {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		border: 1px solid #fe0000 !important;
+		top: 30px;
+		left: 30px;
+		z-index: 1;
+	}
+	img {
+		z-index: 2;
+		position: relative;
+		max-width: 230px;
+	}
+}
+.leadership-name {
+	text-align: center;
+}
+.section-leadership {
+	h2 {
+		margin-bottom: 8px;
+	}
+}
+
+.leadership-wrapper {
+	display: flex;
+	justify-content: space-between;
+	&__item {
+		flex-basis: 48%;
+		.leadership-link {
+			display: flex;
+			align-items: center;
+			font-size: 30px;
+			img {
+				margin-right: 18px;
+			}
+		}
+		.leadership-link + .leadership-link {
+			margin-top: 50px;
+		}
+		.leadership-socials {
+			margin-top: 50px;
+			a + a {
+				margin-left: 20px;
+			}
+		}
+	}
+	&__item:nth-child(1) {
+		text-align: center;
+	}
+	&__item .leader {
+		width: 250px;
+		height: 250px;
+		object-fit: cover;
+	}
+	&__item:nth-child(2) {
+		padding-top: 30px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.geotechnics-list__item h2 {
+		min-width: 380px;
+	}
+	.geotechnics-list__item:nth-child(1),
+	.geotechnics-list__item:nth-child(2) {
+		margin-bottom: 35px;
+	}
+	.geotechnics-list__item a {
+		min-height: 325px;
+	}
+}
+
+@media (max-width: 960px) {
+	.geotechnics-list__item h2 {
+		font-size: 23px;
+		line-height: 33px;
+		min-width: 100%;
+	}
+	.geotechnics-list__item a {
+		padding: 25px;
+		min-height: 214px;
+	}
+	p {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.geotechnics-news-box {
+		flex-direction: column;
+	}
+	.geotechnics-news-box__item:nth-child(1),
+	.geotechnics-news-box__item:nth-child(2) {
+		width: 100%;
+	}
+	.geotechnics-news-box__item-text {
+		min-height: 205px;
+	}
+	.geotechnics-news-box__item-date {
+		margin-bottom: 10px;
+	}
+
+	.countries {
+		font-size: 16px;
+	}
+	.geotechnics-news-box__item h2 {
+		max-width: 556px;
+	}
+	.section-geotechnics-news .tabs {
+		font-size: 28px;
+	}
+	.leadership-wrapper {
+		flex-direction: column;
+	}
+	.leadership-wrapper__item .leadership-link + .leadership-link {
+		margin-top: 20px;
+	}
+	.leadership-wrapper__item:nth-child(1) {
+		display: flex;
+		.border-wrapper {
+			margin-right: 80px;
+		}
+		.leadership-name {
+			text-align: left;
+			padding-top: 40px;
+		}
+	}
+	.section-leadership .border-wrapper {
+		margin: inherit;
+		margin-bottom: 30px;
+	}
+	.leadership-wrapper__item .leadership-link {
+		font-size: 28px;
+	}
+	.leadership-wrapper__item .leadership-socials {
+		margin-top: 10px;
+	}
+	.title {
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 640px) {
+	.geotechnics-list__item,
+	.geotechnics-list__item:nth-child(1),
+	.geotechnics-list__item:nth-child(2) {
+		flex-basis: 80%;
+	}
+	.geotechnics-list__item:not(:last-child),
+	.geotechnics-list__item:nth-child(1),
+	.geotechnics-list__item:nth-child(2) {
+		margin-bottom: 30px;
+	}
+	.geotechnics-list__item a {
+		min-height: 260px;
+	}
+
+	.geotechnics-news-box__item-text {
+		padding: 15px 0 15px 15px;
+		min-height: 179px;
+	}
+	.geotechnics-news-box__item-text h2 {
+		max-width: 100%;
+	}
+	.leadership-wrapper__item:nth-child(1) {
+		flex-direction: column;
+		text-align: center;
+	}
+	.leadership-wrapper__item:nth-child(1) .leadership-name {
+		text-align: center;
+	}
+	.leadership-wrapper__item:nth-child(1) .border-wrapper {
+		margin: 0 auto;
+	}
+	.border-wrapper .border {
+		top: 20px;
+		left: 20px;
+	}
+	.leadership-wrapper__item:nth-child(2) {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.leadership-wrapper__item .leadership-link {
+		font-size: 25px;
+	}
+	.photo-item .leader {
+		width: 200px;
+		height: 200px;
+	}
+}
+
+@media (max-width: 480px) {
+	.section-geotechnics p {
+		margin-bottom: 30px;
+	}
+	.geotechnics-list__item,
+	.geotechnics-list__item:nth-child(1),
+	.geotechnics-list__item:nth-child(2) {
+		flex-basis: 100%;
+	}
+	p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.geotechnics-list__item h2 {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.geotechnics-list__item a {
+		min-height: 222px;
+	}
+	.geotechnics-list__item:not(:last-child),
+	.geotechnics-list__item:nth-child(1),
+	.geotechnics-list__item:nth-child(2) {
+		margin-bottom: 20px;
+	}
+	.geotechnics-list__item img {
+		width: 18px;
+		height: 27px;
+	}
+
+	.countries {
+		font-size: 14px;
+	}
+	.geotechnics-news-box__item-text {
+		min-height: 162px;
+	}
+	.section-geotechnics-news .tabs {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+	.section-geotechnics-news .tabs .tab + .tab {
+		margin-left: 20px;
+	}
+	.leadership-wrapper__item .leadership-link {
+		font-size: 20px;
+	}
+
+	.leadership-link:nth-child(1) img {
+		width: 40px;
+	}
+	.leadership-link:nth-child(2) img {
+		width: 30px;
+	}
+	.section-statics ul .li-top img {
+		width: 45px;
+		height: 45px;
+	}
+}

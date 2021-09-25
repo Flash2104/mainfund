@@ -1,0 +1,86 @@
+.section-error {
+	.section-inner {
+		background: url("../images/error.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+.error-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	h1 {
+		font-weight: bold;
+		font-size: 200px;
+
+		color: #333333;
+	}
+	h2 {
+		max-width: 390px;
+	}
+}
+.section-errors {
+	ul {
+		margin-bottom: 40px;
+	}
+	.dot::before {
+		top: 8px;
+	}
+	.more {
+		display: flex;
+		justify-content: center;
+		color: #333333;
+		padding-bottom: 20px;
+		font-weight: 500;
+	}
+}
+.title-error {
+	margin-top: 50px;
+}
+.more {
+	transition: all 0.3s ease 0s;
+}
+.underline:hover {
+	color: $red;
+}
+.more:hover {
+	color: $red;
+	img {
+		margin-left: 18px;
+	}
+}
+@media (max-width: 1200px) {
+	.error-box {
+		flex-wrap: wrap;
+		h2,
+		h1 {
+			flex-basis: 50%;
+		}
+	}
+	.error-box h1 {
+		font-size: 180px;
+	}
+	.section-error .section-inner {
+		background-size: cover;
+		padding-bottom: 0;
+	}
+}
+
+@media (max-width: 960px) {
+	.error-box h1 {
+		font-size: 150px;
+	}
+	.error-box h1 {
+		order: -1;
+		text-align: center;
+	}
+	.error-box h2,
+	.error-box h1 {
+		flex-basis: 100%;
+	}
+	.error-box h2 {
+		margin-bottom: 20px;
+	}
+}

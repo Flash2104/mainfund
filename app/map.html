@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=da565adc-da6d-4bcd-aeb3-e5d307019b9f&lang=ru_RU"
+		type="text/javascript">
+		</script>
+
+</head>
+
+<body>
+
+	<!-- <div class="mfp-wrap mfp-gallery mfp-close-btn-in mfp-auto-cursor mfp-img-mobile mfp-ready" tabindex="-1"
+		style="overflow: hidden auto;">
+		<div class="mfp-container mfp-s-ready mfp-image-holder">
+			<div class="mfp-content">
+				<div class="mfp-figure"><button title="Close (Esc)" type="button" class="mfp-close"><img
+							src="images/close2.svg" alt=""></button>
+					<figure><img class="mfp-img" alt="" src="images/gallery1.jpg" style="max-height: 568px;">
+						<figcaption>
+							<div class="mfp-bottom-bar">
+								<div class="mfp-title">Фундамент под дом из бревна в Пермской области. <div class="title-city">
+										Выполнен <span>ОП г. Пермь.</span></div>
+									<div> <a class="image-source-link" href="https://gramotei.online/how-to-spell/4179"
+											target="_blank">Подробнее об объекте <img src="images/arrow-red.svg" alt=""></a></div>
+								</div>
+								<div class="mfp-counter">
+									<div> <a class="image-source-link-map"
+											href="https://dimsemenov.com/plugins/magnific-popup/documentation.html#image-type"
+											target="_blank"><img src="images/icon-city.svg" alt="">Посмотреть на карте</a></div>
+								</div>
+							</div>
+						</figcaption>
+					</figure>
+				</div><button title="Previous (Left arrow key)" type="button"
+					class="mfp-arrow mfp-arrow-left mfp-prevent-close"></button><button title="Next (Right arrow key)"
+					type="button" class="mfp-arrow mfp-arrow-right mfp-prevent-close"></button>
+			</div>
+			<div class="mfp-preloader">Loading image #%curr%...</div>
+		</div>
+	</div> -->
+
+	<section class="section-outer section-articles section-map">
+		<div class="section-inner no-padb">
+			<h2 class="title">Деятельность компании в России за 2013-2021 гг.</h2>
+			<form action="" class="articles-search">
+				<h5 class="articles-search__title">Поиск объектов</h5>
+				<div class="articles-search__wrapper">
+					<div class="articles-search__wrapper-col">
+						<label class="checkbox">
+							<input type="checkbox" class="checkbox__real" name="term">
+							<span class="checkbox__fake"></span>
+							<h5 class="checkbox__title">Ограждения</h5>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" class="checkbox__real" name="term">
+							<span class="checkbox__fake"></span>
+							<h5 class="checkbox__title">Промышленные, общественные и с/х объекты</h5>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" class="checkbox__real" name="term">
+							<span class="checkbox__fake"></span>
+							<h5 class="checkbox__title">Жилые здания (каменные и монолитные)</h5>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" class="checkbox__real" name="term">
+							<span class="checkbox__fake"></span>
+							<h5 class="checkbox__title">Только с фото</h5>
+						</label>
+					</div>
+					<div class="articles-search__wrapper-col">
+						<label class="checkbox">
+							<input type="checkbox" class="checkbox__real" name="term">
+							<span class="checkbox__fake"></span>
+							<h5 class="checkbox__title">Реконструкция и усиление</h5>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" class="checkbox__real" name="term">
+							<span class="checkbox__fake"></span>
+							<h5 class="checkbox__title">Жилые здания (деревянные и каркасные)</h5>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" class="checkbox__real" name="term">
+							<span class="checkbox__fake"></span>
+							<h5 class="checkbox__title">Надводные сооружения</h5>
+						</label>
+					</div>
+					<div class="articles-search__wrapper-col">
+						<label class="checkbox">
+							<input type="checkbox" class="checkbox__real" name="term">
+							<span class="checkbox__fake"></span>
+							<h5 class="checkbox__title">Геологические изыскания</h5>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" class="checkbox__real" name="term">
+							<span class="checkbox__fake"></span>
+							<h5 class="checkbox__title">Статические испытания и георадарные обследования</h5>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" class="checkbox__real" name="term">
+							<span class="checkbox__fake"></span>
+							<h5 class="checkbox__title">Малые архитектурные формы</h5>
+						</label>
+					</div>
+				</div>
+				<button class="form-btn" type="submit" data-modal="#modal_map">Найти</button>
+
+			</form>
+
+			<!-- <div id="objects-map" style="width: 100%; height: 400px"></div> -->
+
+			<iframe class="map"
+				src="https://yandex.ru/map-widget/v1/?um=constructor%3A18686f0b136d0dfc335d46c8d820bea735b9079b665470f3cb4de158b3d8735c&amp;source=constructor"
+				width="100%" height="550" frameborder="0"></iframe>
+		</div>
+	</section>
+
+	<div id="modal_map" class="modals modal-map">
+		<div class="modals-content">
+			<span class="close" data-close>
+				<img src="images/close2.svg" alt="">
+			</span>
+
+			<div class="modal-inner">
+				<img class="modal_map-img" src="images/map-pic.jpg" alt="">
+				<div class="modal_map-title">
+					<h5 class="bold">Фундамент на винтовых сваях под кабельный поток от насосной подпитки водохранилища
+						до
+						центральной
+						насосной станции Печорской ГРЭС</h5>
+					<a href="#" class="more">Похожие объекты <img src="images/line.svg" alt=""></a>
+				</div>
+
+				<h6 class="d-flex__icon"><img src="images/icon-city.svg" alt="">Республика Коми, г. Печора</h6>
+				<table>
+					<tr>
+						<td>коррозионная агрессивность грунтов</td>
+						<td>средняя</td>
+					</tr>
+					<tr>
+						<td>конфигурация лопасти</td>
+						<td>для текучепластичных грунтов</td>
+					</tr>
+					<tr>
+						<td>крутящий момент (проектное значение)</td>
+						<td>2600 Н/м</td>
+					</tr>
+					<tr>
+						<td>крутящий момент (фактическое значение, min)</td>
+						<td>2694 Н/м</td>
+					</tr>
+				</table>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- <script type="text/javascript" >
+		ymaps.ready(init);
+
+		function init() {
+			var myMap = new ymaps.Map('map', {
+				center: [55.76, 37.64],
+				zoom: 10
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
+				objectManager = new ymaps.ObjectManager({
+					// Чтобы метки начали кластеризоваться, выставляем опцию.
+					clusterize: true,
+					// ObjectManager принимает те же опции, что и кластеризатор.
+					gridSize: 32,
+					clusterDisableClickZoom: true
+				});
+
+			// Чтобы задать опции одиночным объектам и кластерам,
+			// обратимся к дочерним коллекциям ObjectManager.
+			objectManager.objects.options.set('preset', 'islands#greenDotIcon');
+			objectManager.clusters.options.set('preset', 'islands#greenClusterIcons');
+			myMap.geoObjects.add(objectManager);
+
+			$.ajax({
+				url: "data.json"
+			}).done(function (data) {
+				objectManager.add(data);
+			});
+
+		}
+	</script> -->
+
+
+	<section class="section-statics">
+		<div class="section-inner no-padb">
+			<h2>Статистические данные</h2>
+			<ul>
+				<li>
+					<div class="li-top"><img src="images/static1.svg" alt=""> <span>815 442</span></div>
+					<h5>изготовлено свай</h5>
+				</li>
+				<li>
+					<div class="li-top"><img src="images/static2.svg" alt=""> <span>31 966</span></div>
+					<h5>построено фундаментов</h5>
+				</li>
+				<li>
+					<div class="li-top"><img src="images/static4.svg" alt=""> <span>266</span></div>
+					<h5>реконструкций и усилений</h5>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="section-rating">
+		<div class="section-inner">
+			<div class="rating-wrapper">
+				<h5>Полезна ли Вам информация на данной странице?</h5>
+				<div class="rating-btns">
+					<div class="rating-btn">
+						<button><img src="images/btn1.svg" alt=""></button>
+						<span>0</span>
+					</div>
+					<div class="rating-btn">
+						<button><img src="images/btn2.svg" alt=""></button>
+						<span>0</span>
+					</div>
+					<div class="rating-btn">
+						<button><img src="images/btn3.svg" alt=""></button>
+						<span>0</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="section-inner">
+			<div class="footer-box footer-box1">
+				<h6>Физическим лицам</h6>
+				<ul>
+					<li><a href="#">Проектирование</a></li>
+					<li><a href="#">Проекты домов/бань </a></li>
+					<li><a href="#">Примеры объектов</a></li>
+					<li><a href="#">Стадии строительства</a></li>
+					<li><a href="#">Карта выполненных объектов</a></li>
+					<li><a href="#">Калькулятор </a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Галерея </a></li>
+					<li><a href="#">Часто задаваемые вопросы</a></li>
+				</ul>
+				<h6>Цены</h6>
+				<ul>
+					<li><a href="#">Онлайн-оплата </a></li>
+				</ul>
+			</div>
+			<div class="footer-box footer-box2">
+				<h6>Юридическим лицам </h6>
+				<ul>
+					<li><a href="#">Геология </a></li>
+					<li><a href="#">Проектирование </a></li>
+					<li><a href="#">Испытания грунтов</a></li>
+					<li><a href="#">Реконструкция и усиление </a></li>
+					<li><a href="#">Галерея работ </a></li>
+					<li><a href="#">Менеджмент качества</a></li>
+				</ul>
+				<h6>НИОКР</h6>
+				<ul>
+					<li><a href="#">НТЦ</a></li>
+					<li><a href="#">ЦГМ</a></li>
+					<li><a href="#">УНЦ</a></li>
+					<li><a href="#">ЦАПР</a></li>
+					<li><a href="#">Конференции </a></li>
+				</ul>
+			</div>
+			<div class="footer-box footer-box3">
+				<h6>Компания </h6>
+				<ul>
+					<li><a href="#">Работа у нас </a></li>
+					<li><a href="#">Производство </a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Новости </a></li>
+					<li><a href="#">Статистика </a></li>
+					<li><a href="#">Реквизиты</a></li>
+					<li><a href="#">Договоры </a></li>
+				</ul>
+				<h6 class="title-footer">Статьи</h6>
+				<h6 class="title-footer">Партнерам</h6>
+				<h6 class="title-footer">Контакты</h6>
+			</div>
+			<div class="footer-box footer-box4">
+				<div class="socials">
+					<a href="#">
+						<div class="social social1"></div>
+					</a>
+					<a href="#">
+						<div class="social social2"></div>
+					</a>
+					<a href="#">
+						<div class="social social3"></div>
+					</a>
+					<a href="#">
+						<div class="social social4"></div>
+					</a>
+					<a href="#">
+						<div class="social social5"></div>
+					</a>
+					<a href="#">
+						<div class="social social6"></div>
+					</a>
+					<a href="#">
+						<div class="social social7"><img src="images/spot.svg" alt=""></div>
+					</a>
+					<a href="#">
+						<div class="social social8"><img src="images/mail.svg" alt=""></div>
+					</a>
+					<a href="#">
+						<div class="social social9"><img src="images/rutube.svg" alt=""></div>
+					</a>
+				</div>
+				<div class="pays">
+					<a href="#"><img src="images/pay1.svg" alt=""></a>
+					<a href="#"><img src="images/pay2.svg" alt=""></a>
+					<a href="#"><img src="images/pay3.svg" alt=""></a>
+					<a href="#"><img src="images/pay4.svg" alt=""></a>
+					<a href="#"><img src="images/pay5.svg" alt=""></a>
+					<a href="#"><img src="images/pay6.svg" alt=""></a>
+				</div>
+				<a href="#" class="politics"><img src="images/politics.svg" alt=""><span>Политика обработки персональных
+						данных</span></a>
+				<div class="info">2010 - 2021 © «ГлавФундамент»</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

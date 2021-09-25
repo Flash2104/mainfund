@@ -1,0 +1,96 @@
+.map {
+	margin: 70px 0;
+	.tooltip {
+		opacity: 1;
+	}
+}
+
+.map-franchise {
+	margin: 0 0;
+	.more {
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+	}
+	.st0 {
+		fill: #fff;
+		stroke: #000;
+	}
+	a:hover {
+		color: $red;
+	}
+}
+
+.section-map {
+	.checkbox__title {
+		max-width: 250px;
+	}
+}
+
+.modal-city {
+	display: flex;
+	justify-content: space-between;
+	.checkbox + .checkbox {
+		margin-top: 20px;
+	}
+	.city-box + .city-box {
+		margin-left: 40px;
+	}
+}
+
+.modal-map {
+	.modal_map-title {
+		display: flex;
+		justify-content: space-between;
+		h5 {
+			max-width: 680px;
+		}
+		.more {
+			position: relative;
+			padding-right: 45px;
+			img {
+				right: 0px;
+				position: absolute;
+			}
+		}
+		.more:hover img {
+			right: -10px;
+		}
+	}
+	h6 {
+		margin-bottom: 20px;
+	}
+	.modal_map-img {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.modal-inner {
+		padding: 50px;
+	}
+	.modals-content {
+		max-width: 1200px;
+	}
+	table {
+		width: 100%;
+		max-width: 80%;
+		tr td {
+			padding: 5px 0px;
+		}
+		td:nth-child(2) {
+			font-weight: 700;
+		}
+	}
+}
+
+@media (max-width: 960px) {
+	.modal-map .modal-inner {
+		padding: 40px 20px;
+	}
+	.modal-map .close {
+		top: 10px;
+	}
+	.modal-map table {
+		max-width: 100%;
+	}
+}

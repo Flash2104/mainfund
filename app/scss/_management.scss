@@ -1,0 +1,612 @@
+.section-management {
+	.big {
+		color: $red;
+	}
+	span {
+		display: inline;
+	}
+	.year {
+		font-size: 30px;
+		margin-bottom: 40px;
+	}
+	h6 {
+		color: rgba(51, 51, 51, 0.54);
+	}
+	.comment {
+		border-left: 1px solid rgba(51, 51, 51, 0.54);
+		padding: 10px 0 10px 20px;
+	}
+	.management-border {
+		display: flex;
+		align-items: flex-end;
+		h6 {
+			max-width: 285px;
+			padding-left: 50px;
+			padding-bottom: 30px;
+		}
+	}
+	.text-wrapper .dot::before {
+		top: 11px;
+	}
+}
+.opacity-hide {
+	display: none;
+}
+.section-management-years {
+	.comment {
+		margin-top: 15px;
+		margin-left: 50px;
+	}
+	h6 {
+		max-width: 520px;
+	}
+	p {
+		max-width: 490px;
+	}
+}
+.section-management-time {
+	.text-wrapper__item:nth-child(1) {
+		display: flex;
+		p {
+			padding-top: 10px;
+		}
+	}
+	.year {
+		margin-bottom: 0;
+		margin-right: 30px;
+	}
+}
+.section-management-control {
+	ul {
+		margin-top: 15px;
+	}
+}
+.section-management-quality {
+	.management-border {
+		margin-bottom: 20px;
+	}
+	.quality-text {
+		max-width: 800px;
+	}
+}
+.management-control-wrapper {
+	margin-top: 40px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+	h6 {
+		max-width: 300px;
+		margin-top: 55px;
+	}
+	.border-wrapper {
+		margin: 0 auto;
+	}
+	.photo-item {
+		text-align: left;
+	}
+}
+
+.section-management-operating {
+	background-color: #000;
+	h6 {
+		color: rgba(255, 255, 255, 0.54);
+	}
+	h3 {
+		margin-bottom: 40px;
+	}
+	.text {
+		max-width: 780px;
+	}
+	.text-wrapper1 .text-wrapper__item:nth-child(1) {
+		display: flex;
+		align-items: center;
+		.d-flex__icon {
+			margin-right: 40px;
+		}
+		.arrow {
+			width: 61px;
+		}
+	}
+	.operating-img {
+		display: flex;
+		img {
+			width: 40px;
+			height: 80px;
+		}
+	}
+}
+
+.section-management-supervision {
+	.management-control-wrapper {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	h5 + h5 {
+		margin-top: 35px;
+	}
+}
+
+.section-management-surrender {
+	h3 {
+		margin-bottom: 12px;
+		max-width: 505px;
+	}
+	.text-bold {
+		max-width: 558px;
+	}
+	.border-wrapper {
+		margin-bottom: 50px;
+	}
+}
+.center {
+	text-align: center;
+}
+.section-management-politics {
+	.photo-item h6 {
+		margin-top: 50px;
+	}
+}
+
+.section-management-control {
+	h5 + h5 {
+		margin-top: 15px;
+	}
+}
+
+.section-management-certificates {
+	background-color: #000;
+	.management-certificates-wrapper__item + .management-certificates-wrapper__item {
+		margin-top: 78px;
+	}
+}
+
+.section-management-control2 {
+	.title {
+		max-width: 580px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.section-management .comment {
+		margin-left: 0;
+	}
+	.section-management-time .year {
+		display: inline;
+		margin-right: 0;
+		margin-left: 10px;
+		font-weight: 300;
+		color: #333333;
+	}
+	.section-management-operating .arrow {
+		margin-left: 20px;
+	}
+	.section-management-operating .arrow {
+		margin-left: 0;
+	}
+	.section-management-operating .text-wrapper1 .text-wrapper__item:nth-child(1) .d-flex__icon {
+		margin-right: 6px;
+	}
+	.section-management-supervision {
+		.management-control-wrapper1 {
+			flex-direction: column;
+			.photo-item {
+				display: flex;
+				align-items: flex-end;
+			}
+			h6 {
+				max-width: 285px;
+				padding-left: 50px;
+				padding-bottom: 30px;
+			}
+			.photo-item + .photo-item {
+				margin-top: 60px;
+			}
+		}
+		.photo-item {
+			display: flex;
+			align-items: flex-end;
+			h6 {
+				max-width: 285px;
+				padding-left: 50px;
+				padding-bottom: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 960px) {
+	.opacity-hide {
+		display: block;
+		opacity: 0;
+	}
+	.section-management-control {
+		.line {
+			display: none;
+		}
+
+		.text-wrapper1 {
+			.text-wrapper__item {
+				flex-basis: 100%;
+			}
+		}
+		.text-wrapper2 {
+			margin-top: 20px;
+		}
+	}
+	.section-management {
+		.text-wrapper li + li {
+			margin-top: 10px;
+		}
+		.text-wrapper p + p {
+			margin-top: 10px;
+		}
+		.photo-item img {
+			width: 180px;
+			height: auto;
+		}
+		.border-wrapper .border {
+			top: 18px;
+			left: 18px;
+		}
+		.management-border {
+			flex-direction: column;
+			align-items: baseline;
+			h6 {
+				padding-bottom: 0;
+				padding-left: 4px;
+			}
+		}
+	}
+	.management-control-wrapper h6 {
+		max-width: 200px;
+		padding-bottom: 0;
+	}
+	.section-management-operating {
+		.text-wrapper1 .text-wrapper__item {
+			flex-basis: 100%;
+		}
+		.text-wrapper1 .text-wrapper__item:nth-child(1) {
+			flex-direction: column;
+			.arrow {
+				transform: rotate(90deg);
+				width: 52px;
+				height: 22px;
+				margin: 20px auto;
+			}
+		}
+		.operating-img {
+			img {
+				height: 60px;
+			}
+		}
+		.management-control-wrapper {
+			justify-content: space-between;
+			.photo-item {
+				flex-basis: 48%;
+			}
+		}
+		.photo-item1 img {
+			width: 265px;
+		}
+	}
+	.section-management-supervision {
+		.text-wrapper1 {
+			.text-wrapper__item {
+				flex-basis: 100%;
+			}
+		}
+		.text-wrapper2 {
+			.text-wrapper__item {
+				flex-basis: 50%;
+			}
+			.photo-item {
+				flex-direction: column;
+				align-items: baseline;
+				h6 {
+					padding-left: 0;
+					padding-bottom: 0;
+				}
+			}
+		}
+		.management-control-wrapper1 {
+			flex-direction: row;
+			.photo-item + .photo-item {
+				margin-top: 0;
+			}
+			.photo-item {
+				flex-direction: column;
+				align-items: baseline;
+				flex-basis: 50%;
+				h6 {
+					padding-left: 0;
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+	.section-management-surrender {
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+		.management-surrender-wrapper {
+			display: flex;
+			justify-content: space-between;
+			&__item {
+				flex-basis: 48%;
+			}
+		}
+	}
+	.section-management-politics {
+		.photo-item1 img {
+			width: 380px;
+			height: 250px;
+		}
+		.text-wrapper2 {
+			flex-wrap: nowrap;
+		}
+	}
+	.section-management-control2 {
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+		.text-wrapper__item + .text-wrapper__item {
+			margin-top: 30px;
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.section-management-years {
+		.text-wrapper__item {
+			flex-basis: 100%;
+			display: flex;
+			justify-content: space-between;
+			.year,
+			p {
+				flex-basis: 49%;
+			}
+		}
+		.comment {
+			margin-top: 30px;
+			padding: 10px 0 10px 10px;
+		}
+	}
+	.section-management-time {
+		.big {
+			margin-bottom: 26px;
+		}
+	}
+	.section-management-control .text-wrapper2 {
+		flex-direction: row-reverse;
+	}
+	.section-management-quality .management-control-wrapper {
+		flex-direction: column;
+		align-items: center;
+		.photo-item + .photo-item {
+			margin-top: 30px;
+		}
+	}
+	.section-management .photo-item img {
+		width: 144px;
+	}
+	.section-management-operating {
+		.management-control-wrapper {
+			flex-direction: column;
+			align-items: center;
+			.photo-item + .photo-item {
+				margin-top: 30px;
+			}
+		}
+		.text-wrapper2 {
+			flex-direction: column-reverse;
+		}
+		.text-wrapper2 .text-wrapper__item {
+			flex-basis: 100%;
+		}
+		.photo-item1 img {
+			width: 265px;
+		}
+		.photo-item1 {
+			margin-bottom: 30px;
+			h6 {
+				max-width: 460px;
+				text-align: center;
+				margin: 0px auto;
+			}
+		}
+		.management-control-wrapper3 {
+			flex-direction: row;
+			.photo-item + .photo-item {
+				margin-top: 0px;
+			}
+		}
+	}
+	.management-control-wrapper h6 {
+		margin-top: 35px;
+	}
+
+	.section-management-acceptance {
+		.management-control-wrapper {
+			flex-direction: column;
+			align-items: center;
+			.photo-item + .photo-item {
+				margin-top: 30px;
+			}
+			h6 {
+				max-width: 300px;
+				text-align: center;
+			}
+		}
+		.border-wrapper {
+			margin: 0 auto 40px auto;
+		}
+		// .text-wrapper__item {
+		// 	flex-basis: 100%;
+		// }
+		.management-acceptance-wrapper {
+			display: flex;
+			&__item {
+				flex-basis: 50%;
+			}
+		}
+		.acceptance-mobile1,
+		.acceptance-mobile2 {
+			margin-bottom: 8px;
+		}
+	}
+	.section-management-supervision .photo-item h6 {
+		max-width: 220px;
+	}
+	.section-management-surrender {
+		.text-wrapper h5 {
+			margin-bottom: 8px;
+		}
+	}
+	.section-management-politics {
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+		.text-wrapper2 {
+			flex-wrap: wrap;
+		}
+		.photo-item1 img {
+			width: 290px;
+			height: 200px;
+		}
+		.photo-item1 {
+			margin-bottom: 36px;
+		}
+	}
+	.section-management-certificates {
+		.management-control-wrapper {
+			flex-direction: column;
+			align-items: center;
+			.photo-item + .photo-item {
+				margin-top: 40px;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.section-management-years {
+		.text-wrapper__item {
+			flex-wrap: wrap;
+		}
+		.text-wrapper__item .year {
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		.text-wrapper__item .year,
+		.text-wrapper__item p {
+			flex-basis: 100%;
+		}
+		.comment {
+			margin-top: 15px;
+		}
+		.text-wrapper__item + .text-wrapper__item {
+			margin-top: 40px;
+		}
+	}
+	.section-management-time {
+		.year {
+			font-size: 20px;
+		}
+		.big {
+			margin-bottom: 12px;
+		}
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+	}
+	.section-management-control {
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+		.text-wrapper__item2 {
+			flex-direction: column;
+		}
+		.text-wrapper2 {
+			flex-direction: column-reverse;
+		}
+		.management-border {
+			text-align: center;
+			align-items: center;
+			margin-bottom: 12px;
+		}
+	}
+	.section-management-quality {
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+		.management-border {
+			text-align: center;
+			align-items: center;
+		}
+	}
+	.management-control-wrapper {
+		h6 {
+			text-align: center;
+		}
+	}
+	.section-management-operating {
+		.d-flex__icon {
+			max-width: 340px;
+		}
+	}
+	.section-management-acceptance {
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+		.text-wrapper {
+			flex-direction: column-reverse;
+		}
+		.management-border {
+			align-items: center;
+			margin-bottom: 20px;
+		}
+	}
+	.management-control-wrapper {
+		margin-bottom: 20px;
+	}
+	.section-management-supervision {
+		.management-control-wrapper {
+			flex-direction: column;
+			.photo-item {
+				align-items: center;
+			}
+			.photo-item + .photo-item {
+				margin-top: 16px;
+			}
+		}
+		.text-wrapper2 .text-wrapper__item {
+			flex-basis: 100%;
+			.photo-item2 {
+				margin-top: 16px;
+			}
+		}
+	}
+	.section-management-surrender {
+		.management-surrender-wrapper {
+			flex-direction: column;
+		}
+		.management-surrender-wrapper__item {
+			flex-basis: 100%;
+		}
+		.management-border {
+			align-items: center;
+			h6 {
+				text-align: center;
+			}
+		}
+		.border-wrapper {
+			margin-bottom: 40px;
+		}
+	}
+	.section-management-control2 .text-wrapper__item + .text-wrapper__item {
+		margin-top: 15px;
+	}
+	.section-management-slider .reconstruction-slider .slider-btn {
+		bottom: -90px;
+	}
+}

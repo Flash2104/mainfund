@@ -1,0 +1,242 @@
+.section-guarantee {
+	&.white {
+		background-color: #000000;
+	}
+	.text-wrapper__item {
+		flex-basis: 50%;
+	}
+	.title {
+		max-width: 395px;
+	}
+	.d-flex__icon img {
+		margin-right: 20px;
+	}
+}
+
+.section-guarantee-about {
+	h5 {
+		font-weight: 700;
+		max-width: 223px;
+	}
+	.text-wrapper__item:nth-child(1) p {
+		max-width: 413px;
+	}
+}
+.section-guarantee-cases {
+	p,
+	.text-wrapper ul {
+		margin-bottom: 20px;
+	}
+	.text-wrapper li + li {
+		margin-top: 10px;
+	}
+}
+.section-guarantee-order {
+	.text-wrapper li + li {
+		margin-top: 30px;
+	}
+	.guarantee-list {
+		&__item {
+			max-width: 510px;
+			h5 {
+				margin-bottom: 0;
+			}
+		}
+
+		&__item-number {
+			color: rgba(51, 51, 51, 0.54);
+			font-weight: 700;
+			padding-left: 120px;
+			position: relative;
+			margin-bottom: 18px;
+			&::before {
+				position: absolute;
+				content: "";
+				width: 100px;
+				left: 0;
+				top: 14px;
+				height: 1px;
+				background-color: rgba(51, 51, 51, 0.54);
+			}
+		}
+	}
+	.d-flex__icon {
+		align-items: flex-start;
+	}
+}
+.section-guarantee-no {
+	.title {
+		max-width: 540px;
+	}
+	.text-wrapper li + li {
+		margin-top: 15px;
+	}
+}
+.section-guarantee-certificate {
+	.title {
+		max-width: 465px;
+		margin-bottom: 0;
+	}
+	.title + .title {
+		margin-top: 70px;
+	}
+	h3 {
+		margin-bottom: 38px;
+	}
+	ul li + li {
+		margin-top: 65px;
+	}
+	.d-flex__icon {
+		align-items: baseline;
+	}
+}
+.section-guarantee-grey {
+	background-color: #e5e5e5;
+	padding: 16px;
+	margin-top: 20px;
+	h3 {
+		max-width: 616px;
+		text-align: center;
+		margin: 0px auto;
+	}
+}
+
+@media (max-width: 960px) {
+	.d-flex__icon img {
+		width: 45px;
+		height: 43px;
+	}
+	.section-guarantee-about {
+		.text-wrapper__item:nth-child(1) p {
+			max-width: 300px;
+		}
+	}
+
+	.section-guarantee-grey {
+		h3 {
+			max-width: 585px;
+		}
+	}
+	.section-guarantee {
+		.title {
+			max-width: 317px;
+		}
+	}
+	.section-guarantee-order {
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+		.title {
+			max-width: 617px;
+		}
+		.text-wrapper li + li {
+			margin-top: 0px;
+		}
+	}
+	.guarantee-list {
+		display: flex;
+		flex-wrap: wrap;
+		&__item {
+			margin-top: 0;
+			flex-basis: 50%;
+		}
+		&__item:nth-child(1) h5 {
+			max-width: 200px;
+		}
+	}
+	.section-guarantee-no {
+		li {
+			max-width: 305px;
+		}
+	}
+	.section-guarantee-certificate {
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+		.title {
+			max-width: 85%;
+		}
+		.title + .title {
+			margin-top: 0;
+		}
+		.text-wrapper__item {
+			display: flex;
+			flex-direction: column;
+		}
+		.text-wrapper__item:nth-child(2) {
+			flex-direction: column-reverse;
+		}
+		.guarantee-certificate-list__item1,
+		.guarantee-certificate-list__item2 {
+			display: flex;
+			margin-top: 28px;
+			div {
+				flex-basis: 50%;
+			}
+		}
+	}
+	.section-guarantee-cases .guarantee-cases-list {
+		display: flex;
+		flex-wrap: wrap;
+		li {
+			flex-basis: 50%;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.section-guarantee {
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+	}
+	.section-guarantee-cases .guarantee-cases-list li,
+	.guarantee-list__item {
+		flex-basis: 100%;
+	}
+	.section-guarantee-no li {
+		max-width: 100%;
+	}
+	.section-guarantee-about {
+		.text-wrapper__item {
+			flex-basis: 50%;
+		}
+	}
+	.section-guarantee-order .guarantee-list__item + .guarantee-list__item {
+		margin-top: 30px;
+	}
+	.section-guarantee-order .guarantee-list__item-number {
+		margin-bottom: 10px;
+	}
+	.guarantee-list__item:nth-child(1) h5 {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	.section-guarantee-about .text-wrapper__item {
+		flex-basis: 100%;
+	}
+	.section-guarantee-about h5 {
+		max-width: 100%;
+	}
+	.text-wrapper h5 {
+		margin-bottom: 10px;
+	}
+	.section-guarantee-about .text-wrapper__item + .text-wrapper__item {
+		margin-top: 30px;
+	}
+	.section-guarantee-order .guarantee-list__item + .guarantee-list__item {
+		margin-top: 10px;
+	}
+	.section-guarantee-no .text-wrapper li + li {
+		margin-top: 8px;
+	}
+	.section-guarantee-certificate .title {
+		max-width: 100%;
+	}
+	.section-guarantee .title {
+		margin-bottom: 20px;
+	}
+}

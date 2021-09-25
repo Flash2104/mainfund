@@ -1,0 +1,297 @@
+.section-gallery {
+	h3 {
+		max-width: 860px;
+		margin: 0 auto;
+	}
+	.btn-red {
+		margin: 0 auto;
+		display: flex;
+		margin: 40px auto;
+	}
+	.gallery {
+		&-two {
+			display: grid;
+			grid-template-columns: repeat(2, 580px);
+			grid-template-rows: 435px;
+			gap: 40px;
+		}
+		&-three {
+			display: grid;
+
+			grid-template-columns: 720px 440px;
+			grid-template-rows: 255px 255px;
+			gap: 40px 40px;
+			grid-template-areas:
+				"item item1"
+				"item item2";
+			.gallery-item:nth-child(1) {
+				grid-area: item;
+			}
+			.gallery-item:nth-child(2) {
+				grid-area: item1;
+			}
+			.gallery-item:nth-child(3) {
+				grid-area: item2;
+			}
+		}
+		&-three__right {
+			display: grid;
+
+			grid-template-columns: 440px 720px;
+			grid-template-rows: 255px 255px;
+			gap: 40px 40px;
+			grid-template-areas:
+				"item1 item"
+				"item2 item";
+			.gallery-item:nth-child(1) {
+				grid-area: item;
+			}
+			.gallery-item:nth-child(2) {
+				grid-area: item1;
+			}
+			.gallery-item:nth-child(3) {
+				grid-area: item2;
+			}
+		}
+		.gallery-box + .gallery-box {
+			margin-top: 40px;
+		}
+
+		&-item img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	// .atul {
+	// 	display: grid;
+	// 	grid-template-columns: repeat(400, 0.25%);
+	// 	grid-auto-rows: 255px; /* for demo only */
+	// 	grid-row-gap: 40px; /* note that you need to create column gaps through
+	// 									 the proper distribution of columns, because if you
+	// 									 use `grid-column-gap`, it will add a gap between
+	// 									 all 400 columns */
+	// }
+
+	// /* starting at the 4th item, target even items only */
+	// .card:nth-child(odd) {
+	// 	grid-column: 1 / 195;
+	// }
+
+	// .card:nth-child(even) {
+	// 	grid-column: -1 / -195;
+	// }
+	// .card.card-big {
+	// 	grid-column: 2 / 241;
+	// 	grid-row: 2 / 4;
+	// }
+
+	// .card.card-small__top {
+	// 	grid-column: -1 / -149; /* starting at the end line of the grid
+	// 										(works only in explicit grids) */
+	// 	grid-row: 2 / 2;
+	// }
+
+	// .card.card-small__bottom {
+	// 	grid-column: -1 / -149;
+	// 	grid-row: 3 / 3;
+	// }
+}
+
+img.mfp-img {
+	padding: 0 0;
+}
+.mfp-figure {
+	background-color: $white;
+	padding: 50px;
+}
+.mfp-counter {
+	position: relative;
+	@include PTsans;
+	color: $black;
+	font-size: 16px;
+	line-height: 21px;
+}
+.mfp-title {
+	color: $black;
+}
+.mfp-bottom-bar {
+	padding-top: 15px;
+	font-size: 16px;
+	line-height: 21px;
+	margin-top: 0;
+	position: relative;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+}
+.title-city {
+	margin: 10px 0;
+
+	span {
+		border-bottom: 1px solid #fe0000;
+	}
+}
+.image-source-link-map {
+	display: flex;
+	align-items: center;
+	img {
+		margin-right: 10px;
+	}
+}
+
+.image-source-link {
+	color: $red;
+	display: flex;
+	align-items: center;
+
+	img {
+		margin-left: 10px;
+	}
+}
+img.mfp-img {
+	padding: 0 0;
+	margin: 0;
+	width: 100%;
+}
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
+	right: 8px;
+	img {
+		width: 20px;
+		height: 20px;
+	}
+}
+// button.mfp-close,
+// button.mfp-arrow {
+// 	height: 70px !important;
+// }
+.mfp-arrow-left {
+	background: url("../images/gallery-arrow1.svg") no-Repeat top left !important;
+	// transform: rotate(180deg);
+	background-size: contain !important;
+	width: 25px;
+	height: 37px;
+}
+
+.mfp-arrow-right {
+	background: url("../images/slick-arrow.svg") no-Repeat top right !important;
+	width: 25px;
+	height: 37px;
+	background-size: contain !important;
+}
+
+.mfp-arrow-left::before,
+.mfp-arrow-right::before {
+	display: none;
+	content: "";
+}
+
+.mfp-arrow-left::after,
+.mfp-arrow-right::after {
+	display: none;
+	content: "";
+}
+.mfp-arrow-right {
+	right: 10px;
+}
+.mfp-arrow-left {
+	left: 10px;
+}
+
+@media (max-width: 1200px) {
+	.section-gallery .gallery-three,
+	.section-gallery .gallery-three__right {
+		grid-template-columns: 460px 460px;
+		grid-template-rows: 200px 200px;
+	}
+	.section-gallery .gallery-two {
+		grid-template-columns: repeat(2, 460px);
+		grid-template-rows: 345px;
+	}
+}
+
+@media (max-width: 960px) {
+	.section-gallery .gallery-three,
+	.section-gallery .gallery-three__right {
+		grid-template-columns: 305px 305px;
+		grid-template-rows: 150px 150px;
+		gap: 30px;
+	}
+	.section-gallery .gallery-two {
+		grid-template-columns: repeat(2, 305px);
+		grid-template-rows: 305px;
+		gap: 30px;
+	}
+	.section-gallery .gallery .gallery-box + .gallery-box {
+		margin-top: 30px;
+	}
+	.mfp-arrow-right,
+	.mfp-arrow-left {
+		width: 22px;
+		height: 32px;
+	}
+	.mfp-arrow-left {
+		left: 5px;
+	}
+	.mfp-arrow-right {
+		right: 5px;
+	}
+	.mfp-image-holder .mfp-close img,
+	.mfp-iframe-holder .mfp-close img {
+		width: 15px;
+		height: 15px;
+	}
+}
+
+@media (max-width: 640px) {
+	.section-gallery .gallery-three,
+	.section-gallery .gallery-three__right {
+		grid-template-columns: 230px 230px;
+		grid-template-rows: 100px 100px;
+		gap: 20px;
+	}
+	.section-gallery .gallery-two {
+		grid-template-columns: repeat(2, 230px);
+		grid-template-rows: 230px;
+		gap: 20px;
+	}
+	.section-gallery .gallery .gallery-box + .gallery-box {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.section-gallery .gallery-three,
+	.section-gallery .gallery-three__right {
+		grid-template-columns: 155px 155px;
+		grid-template-rows: 100px 100px;
+		gap: 10px;
+		grid-template-areas:
+			"item item"
+			"item1 item2";
+	}
+	.section-gallery .gallery-two {
+		grid-template-columns: repeat(2, 155px);
+		grid-template-rows: 120px;
+		gap: 10px;
+	}
+	.section-gallery .gallery .gallery-box + .gallery-box {
+		margin-top: 10px;
+	}
+	.section-gallery .btn-red {
+		margin: 20px auto;
+	}
+	.mfp-arrow-right,
+	.mfp-arrow-left {
+		width: 18px;
+		height: 25px;
+	}
+	.mfp-image-holder .mfp-close img,
+	.mfp-iframe-holder .mfp-close img {
+		width: 10px;
+		height: 10px;
+	}
+}

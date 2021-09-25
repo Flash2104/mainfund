@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+	<!-- MAIN SCREEN -->
+	<section class="section-outer section-main-screen white section-main-screen__heading"
+		style="background-image: url(./images/production.jpg);">
+		<div class="section-inner">
+			<h1>Производство винтовых свай</h1>
+		</div>
+	</section>
+	<!-- / MAIN SCREEN -->
+
+	<section class="section-outer section-production">
+		<div class="section-inner no-padb">
+			<div class="text-wrapper">
+				<div class="text-wrapper__item">
+					<h2 class="production-title">Из чего складывается качество продукции?</h2>
+				</div>
+				<div class="text-wrapper__item">
+					<ul>
+						<li class="dot">Качественное сырье.</li>
+						<li class="dot">Высокотехнологичное сертифицированное оборудование.</li>
+						<li class="dot">Квалифицированный персонал.</li>
+						<li class="dot">Контроль на всех этапах производства. </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="section-outer section-production">
+		<div class="section-inner no-padb">
+
+			<div id="model3d">
+				<div id="screen" onclick="enterFullscreen('model3d')" class="full-btn" title="Развернуть/Свернуть">
+					Toggle iframe content fullscreen
+				</div>
+				<div id="modelimg">
+					<img src="images/proizv-min.webp" class="img-responsive" id="map-fallback">
+					<div class="modal" tabindex="-1" role="dialog" id="ex1">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-body">
+									<p>
+										Производство
+									</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="map">
+				</div>
+				<div id="check">
+
+					<div class="production-house-navigation">
+						<div class="production-house-navigation__wrapper">
+							<label class="checkbox production-icon1">
+								<input type="checkbox" class="checkbox__real cursor-pointer" id="svarka" name="map_choice"
+									value="svarka">
+								<span class="checkbox__fake"></span>
+								<img src="images/house-navigation1.svg" alt="">
+								<h5 class="checkbox__title">Сварочные работы</h5>
+							</label>
+							<label class="checkbox production-icon2">
+								<input type="checkbox" class="checkbox__real cursor-pointer" id="raskraska" name="map_choice"
+									value="raskraska">
+								<span class="checkbox__fake"></span>
+								<img src="images/house-navigation2.svg" alt="">
+								<h5 class="checkbox__title">Покрасочные работы</h5>
+							</label>
+							<label class="checkbox production-icon3">
+								<input type="checkbox" class="checkbox__real cursor-pointer" id="sklad" name="map_choice"
+									value="sklad">
+								<span class="checkbox__fake"></span>
+								<img src="images/house-navigation3.svg" alt="">
+								<h5 class="checkbox__title">Упаковка и складирование</h5>
+							</label>
+						</div>
+						<div class="production-house-navigation__wrapper">
+							<label class="checkbox production-icon4">
+								<input type="checkbox" class="checkbox__real cursor-pointer" id="raskroi" name="map_choice"
+									value="raskroi">
+								<span class="checkbox__fake"></span>
+								<img src="images/house-navigation4.svg" alt="">
+								<h5 class="checkbox__title">Раскрой листа и трубы</h5>
+							</label>
+							<label class="checkbox production-icon5">
+								<input type="checkbox" class="checkbox__real cursor-pointer" id="control" name="map_choice"
+									value="control">
+								<span class="checkbox__fake"></span>
+								<img src="images/house-navigation5.svg" alt="">
+								<h5 class="checkbox__title">Контроль качества</h5>
+							</label>
+						</div>
+					</div>
+
+
+					<!-- <div class="hidden">
+						<input type="checkbox" id="reset" name="map_choice" value="reset" class="cursor-pointer">
+					</div> -->
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="section-outer section-production section-production-control">
+		<div class="section-inner no-padb">
+			<div class="text-wrapper">
+				<div class="text-wrapper__item">
+					<h2>Контроль качества </h2>
+					<p>Осуществляется в соответствии с требованиями ГОСТ Р 59106 «Сваи стальные винтовые. Технические
+						условия» и ТУ 25.11.23-004-20882284-2017 (взамен ТУ 5264-001-20882284-2013, ТУ 5264-002-20882284-2013,
+						ТУ 5264-003-20882284-2013).</p>
+				</div>
+				<div class="text-wrapper__item">
+					<h2>Входной контроль</h2>
+					<p>Исключает вероятность попадания в производство сырья и комплектующих ненадлежащего качества (подробнее
+						в разделе <a href="#" class="underline">«Менеджмент качества»</a>).</p>
+				</div>
+			</div>
+			<div class="management-control-wrapper">
+				<div class="photo-item">
+					<span class="number red">01</span>
+					<div class="border-wrapper">
+						<div class="border"></div>
+						<img class="leader" src="images/production1.jpg" alt="">
+					</div>
+				</div>
+				<div class="photo-item">
+					<span class="number red">02</span>
+					<div class="border-wrapper">
+						<div class="border"></div>
+						<img class="leader" src="images/production2.jpg" alt="">
+					</div>
+				</div>
+				<div class="photo-item">
+					<span class="number red">03</span>
+					<div class="border-wrapper">
+						<div class="border"></div>
+						<img class="leader" src="images/production3.jpg" alt="">
+					</div>
+				</div>
+				<div class="photo-item gray">
+					<h6>(01) Сертификат соответствия продукции «Сваи стальные винтовые и оголовки к ним» ГОСТ Р 59106 «Сваи
+						стальные винтовые. Технические условия»</h6>
+					<h6>(02) Сертификат соответствия продукции «Сваи стальные винтовые и оголовки к ним» ТУ
+						25.11.23-004-20882284-2017</h6>
+					<h6>(03) Журнал входного учета и контроля качества получаемых деталей, материалов, конструкций и
+						оборудования</h6>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-outer section-production section-production2">
+		<div class="section-inner no-padb">
+			<h2 class="title">Операционно-производственный контроль</h2>
+
+			<div class="text-wrapper text-wrapper1">
+				<div class="text-wrapper__item">
+					<h3>Осуществляется следующим образом.</h3>
+					<h5 class="d-flex__icon">
+						<div class="operating-img"><img src="images/prod-icon.svg" alt=""></div>
+						Случайно отобранная единица
+						проверяется по всем параметрам. Если фактическое
+						значение хотя бы одного
+						параметра единицы выходит за пределы допуска, эта единица выбраковывается.
+					</h5>
+					<img class="production-line" src="images/production-line.svg" alt="">
+					<h5 class="d-flex__icon"><img src="images/prod-icon.svg" alt="">Контролируют удвоенное количество единиц
+						из этой партии. В случае повторного обнаружения брака по тому
+						же параметру все единицы партии возвращают исполнителю на разбраковку, а затем их предъявляют на
+						контроль в том же порядке.</h5>
+					<h5 class="d-flex__icon"><img src="images/prod-icon.svg" alt="">
+						<div>Подробнее об операционно-производственном
+							контроле в разделе <a href="#" class="underline">«Менеджмент
+								качества»</a>.</div>
+					</h5>
+				</div>
+				<div class="text-wrapper__item">
+					<div class="management-control-wrapper">
+						<div class="photo-item">
+							<div class="border-wrapper">
+								<div class="border"></div>
+								<img class="leader" src="images/production4.jpg" alt="">
+							</div>
+						</div>
+						<div class="photo-item">
+							<div class="border-wrapper">
+								<div class="border"></div>
+								<img class="leader" src="images/production4.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	</section>
+
+	<section class="section-outer section-production section-production-control">
+		<div class="section-inner no-padb">
+			<h2 class="title">Неразрушающий контроль качества сварных соединений</h2>
+			<div class="text-wrapper">
+				<div class="text-wrapper__item">
+					<ul>
+						<li>Состоит из двух этапов:</li>
+						<li class="dot">Визуально-измерительный контроль (ВИК). Позволяет выявить смещение кромок,
+							поверхностные трещины и т.п.</li>
+						<li class="dot">Ультразвуковой контроль (УЗК). Позволяет установить сплошность сварного шва и выявить
+							дефекты, на глубине от 1 до 10 мм от поверхности шва.</li>
+					</ul>
+				</div>
+				<div class="text-wrapper__item">
+					<p>Подробнее о методах неразрушающего контроля в статье <a href="#" class="underline">«Контроль качества
+							сварных швов винтовых свай»</a>.</p>
+				</div>
+			</div>
+			<div class="management-control-wrapper">
+				<div class="photo-item">
+					<span class="number red">04</span>
+					<div class="border-wrapper">
+						<div class="border"></div>
+						<img class="leader" src="images/production5.jpg" alt="">
+					</div>
+				</div>
+				<div class="photo-item">
+					<span class="number red">05</span>
+					<div class="border-wrapper">
+						<div class="border"></div>
+						<img class="leader" src="images/production6.jpg" alt="">
+					</div>
+				</div>
+				<div class="photo-item">
+					<span class="number red">06</span>
+					<div class="border-wrapper">
+						<div class="border"></div>
+						<img class="leader" src="images/production7.jpg" alt="">
+					</div>
+				</div>
+				<div class="photo-item gray">
+					<h6>(04) Визуальный и измерительный контроль сварных соединений винтовых свай</h6>
+					<h6>(05) Ультразвуковой контроль сварных соединений винтовых свай</h6>
+					<h6>(06) Сборка и сварка винтовых свай. СВС 500(8)/1-500(8)/1-133(6)/7100К</h6>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-outer section-production section-production-control">
+		<div class="section-inner no-padb">
+			<h2 class="title">Приемосдаточный контроль</h2>
+			<div class="management-control-wrapper">
+				<div class="photo-item">
+					<span class="number red">07</span>
+					<div class="border-wrapper">
+						<div class="border"></div>
+						<img class="leader" src="images/production8.jpg" alt="">
+					</div>
+				</div>
+				<div class="photo-item">
+					<span class="number red">08</span>
+					<div class="border-wrapper">
+						<div class="border"></div>
+						<img class="leader" src="images/production9.jpg" alt="">
+					</div>
+				</div>
+				<div class="photo-item">
+					<span class="number red">09</span>
+					<div class="border-wrapper">
+						<div class="border"></div>
+						<img class="leader" src="images/production10.jpg" alt="">
+					</div>
+				</div>
+				<div class="photo-item gray">
+					<h6>(07) Свидетельство о поверке. Средство измерений: Толщиномер покрытий МТ-2007</h6>
+					<h6>(08) Свидетельство о поверке. Средство измерений: УСД-50 Дефектоскоп ультразвуковой</h6>
+					<h6>(09) Сертификат о калибровке: Комплекс для визуального и измерительного контроля</h6>
+				</div>
+			</div>
+			<div class="text-wrapper mt-2">
+				<div class="text-wrapper__item">
+					<ul>
+						<li>Включает:</li>
+						<li class="dot">проверку наличия документов по входному, операционному контролю;</li>
+						<li class="dot">визуальный контроль внешнего вида свай, покрытия, размеров;</li>
+						<li class="dot">проверку комплектности;</li>
+						<li class="dot">маркировку продукции с указанием всех участников производственного процесса;</li>
+						<li class="dot">упаковку для предотвращения повреждения ЛКП во время перевозки, складирования винтовых
+							свай.</li>
+					</ul>
+					<p>Прошедшие приемо-сдаточный контроль сваи маркируются клеймом ОТК.</p>
+					<p>Результаты оформляются документом о качестве (паспорт продукции) по ГОСТ Р 59106 «Сваи стальные
+						винтовые. Технические условия». </p>
+				</div>
+				<div class="text-wrapper__item">
+					<div class="management-control-wrapper management-control-wrapper-two">
+						<div class="photo-item">
+							<span class="number red">10</span>
+							<div class="border-wrapper">
+								<div class="border"></div>
+								<img class="leader" src="images/production11.jpg" alt="">
+							</div>
+						</div>
+						<div class="photo-item gray">
+							<h6>(10) Паспорт продукции </h6>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-outer section-production section-production-control">
+		<div class="section-inner no-padb">
+			<h2 class="title">Раскрой листа и трубы</h2>
+			<div class="management-control-wrapper">
+				<div class="photo-item inline">
+					<p>Применение технологии плазменной резки исключает отклонения от заданных геометрических форм в процессе
+						раскроя, обеспечивает высокую скорость и точность резки, позволяет соблюдать контуры сложной формы.
+					</p>
+					<p>Специалисты участка проходят ежегодную аттестацию на знание работы и программирования плазменного
+						оборудования.</p>
+				</div>
+				<div class="photo-item">
+					<span class="number red">11</span>
+					<div class="border-wrapper">
+						<div class="border"></div>
+						<img class="leader" src="images/production14.jpg" alt="">
+					</div>
+				</div>
+				<div class="photo-item">
+					<span class="number red">12</span>
+					<div class="border-wrapper">
+						<div class="border"></div>
+						<img class="leader" src="images/production15.jpg" alt="">
+					</div>
+				</div>
+				<div class="photo-item gray">
+					<h6>(11) Сертификат соответствия на плазменный аппарат по раскрою трубы</h6>
+					<h6>(12) Сертификат соответствия на плазменный аппарат по раскрою листа</h6>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-outer section-production section-production-control">
+		<div class="section-inner no-padb">
+			<h2 class="title">Сварочные работы</h2>
+			<div class="management-control-wrapper">
+				<div class="photo-item photo-item--horizontal">
+					<span class="number red">11</span>
+					<div class="border-wrapper">
+						<div class="border"></div>
+						<img class="leader" src="images/production12.jpg" alt="">
+					</div>
+				</div>
+				<div class="photo-item">
+					<span class="number red">12</span>
+					<div class="border-wrapper">
+						<div class="border"></div>
+						<img class="leader" src="images/production13.jpg" alt="">
+					</div>
+				</div>
+				<div class="photo-item gray">
+					<h6>(13) Национальное Агентство Контроля Сварки НАКС. Аттестационное удостоверение специалиста сварочного
+						производства</h6>
+					<h6>(14) Сертификат соответствия на сварочные аппараты</h6>
+				</div>
+			</div>
+			<h5 class="production-text">Сварочные работы выполняются автоматическим способом с использованием сварочных
+				аппаратов. Часть продукции
+				изготавливается с применением экспериментального роботизированного комплекса на базе сварочного робота
+				Fanuc.</h5>
+		</div>
+	</section>
+
+	<section class="section-outer section-production">
+		<div class="section-inner no-padb">
+			<div class="text-wrapper">
+				<div class="text-wrapper__item">
+					<h2 class="title">Покрасочные работы</h2>
+				</div>
+				<div class="text-wrapper__item">
+					<p>Подготовительный этап перед покраской включает механическую очистку (пескоструйная обработка или
+						очистка корд-щетками) и обезжиривание поверхности. Нанесение покрытия может осуществляться по двум
+						вариантам: в покрасочной камере (полимерно-порошковое покрытие для свай малых длин) и краскопультом.
+					</p>
+					<p>Подробнее о различных видах покрытий, их достоинствах и недостатках в статье <a href="#"
+							class="underline">«Испытания покрытий для винтовых свай»</a>.</p>
+				</div>
+			</div>
+	</section>
+
+	<section class="section-outer section-production">
+		<div class="section-inner">
+			<div class="text-wrapper">
+				<div class="text-wrapper__item">
+					<h2 class="title">Упаковка и складирование готовой продукции</h2>
+				</div>
+				<div class="text-wrapper__item">
+					<p>Продукция, прошедшая проверку ОТК, упаковывается в стрейч-пленку и передается на склад готовой
+						продукции. По согласованию с заказчиком партии свай могут паллетироваться.</p>
+				</div>
+			</div>
+	</section>
+
+	<section class="section-statics">
+		<div class="section-inner no-padb">
+			<h2>Статистические данные</h2>
+			<ul>
+				<li>
+					<div class="li-top"><img src="images/static1.svg" alt=""> <span>815 442</span></div>
+					<h5>изготовлено свай</h5>
+				</li>
+				<li>
+					<div class="li-top"><img src="images/static2.svg" alt=""> <span>2 378</span></div>
+					<h5>израсходовано трубы, км</h5>
+				</li>
+				<li>
+					<div class="li-top"><img src="images/static3.svg" alt=""> <span>5 210</span></div>
+					<h5>производственная площадь, кв. м.</h5>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="section-rating">
+		<div class="section-inner">
+			<div class="rating-wrapper">
+				<h5>Полезна ли Вам информация на данной странице?</h5>
+				<div class="rating-btns">
+					<div class="rating-btn">
+						<button><img src="images/btn1.svg" alt=""></button>
+						<span>0</span>
+					</div>
+					<div class="rating-btn">
+						<button><img src="images/btn2.svg" alt=""></button>
+						<span>0</span>
+					</div>
+					<div class="rating-btn">
+						<button><img src="images/btn3.svg" alt=""></button>
+						<span>0</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="section-inner">
+			<div class="footer-box footer-box1">
+				<h6>Физическим лицам</h6>
+				<ul>
+					<li><a href="#">Проектирование</a></li>
+					<li><a href="#">Проекты домов/бань </a></li>
+					<li><a href="#">Примеры объектов</a></li>
+					<li><a href="#">Стадии строительства</a></li>
+					<li><a href="#">Карта выполненных объектов</a></li>
+					<li><a href="#">Калькулятор </a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Галерея </a></li>
+					<li><a href="#">Часто задаваемые вопросы</a></li>
+				</ul>
+				<h6>Цены</h6>
+				<ul>
+					<li><a href="#">Онлайн-оплата </a></li>
+				</ul>
+			</div>
+			<div class="footer-box footer-box2">
+				<h6>Юридическим лицам </h6>
+				<ul>
+					<li><a href="#">Геология </a></li>
+					<li><a href="#">Проектирование </a></li>
+					<li><a href="#">Испытания грунтов</a></li>
+					<li><a href="#">Реконструкция и усиление </a></li>
+					<li><a href="#">Галерея работ </a></li>
+					<li><a href="#">Менеджмент качества</a></li>
+				</ul>
+				<h6>НИОКР</h6>
+				<ul>
+					<li><a href="#">НТЦ</a></li>
+					<li><a href="#">ЦГМ</a></li>
+					<li><a href="#">УНЦ</a></li>
+					<li><a href="#">ЦАПР</a></li>
+					<li><a href="#">Конференции </a></li>
+				</ul>
+			</div>
+			<div class="footer-box footer-box3">
+				<h6>Компания </h6>
+				<ul>
+					<li><a href="#">Работа у нас </a></li>
+					<li><a href="#">Производство </a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Новости </a></li>
+					<li><a href="#">Статистика </a></li>
+					<li><a href="#">Реквизиты</a></li>
+					<li><a href="#">Договоры </a></li>
+				</ul>
+				<h6 class="title-footer">Статьи</h6>
+				<h6 class="title-footer">Партнерам</h6>
+				<h6 class="title-footer">Контакты</h6>
+			</div>
+			<div class="footer-box footer-box4">
+				<div class="socials">
+					<a href="#">
+						<div class="social social1"></div>
+					</a>
+					<a href="#">
+						<div class="social social2"></div>
+					</a>
+					<a href="#">
+						<div class="social social3"></div>
+					</a>
+					<a href="#">
+						<div class="social social4"></div>
+					</a>
+					<a href="#">
+						<div class="social social5"></div>
+					</a>
+					<a href="#">
+						<div class="social social6"></div>
+					</a>
+					<a href="#">
+						<div class="social social7"><img src="images/spot.svg" alt=""></div>
+					</a>
+					<a href="#">
+						<div class="social social8"><img src="images/mail.svg" alt=""></div>
+					</a>
+					<a href="#">
+						<div class="social social9"><img src="images/rutube.svg" alt=""></div>
+					</a>
+				</div>
+				<div class="pays">
+					<a href="#"><img src="images/pay1.svg" alt=""></a>
+					<a href="#"><img src="images/pay2.svg" alt=""></a>
+					<a href="#"><img src="images/pay3.svg" alt=""></a>
+					<a href="#"><img src="images/pay4.svg" alt=""></a>
+					<a href="#"><img src="images/pay5.svg" alt=""></a>
+					<a href="#"><img src="images/pay6.svg" alt=""></a>
+				</div>
+				<a href="#" class="politics"><img src="images/politics.svg" alt=""><span>Политика обработки персональных
+						данных</span></a>
+				<div class="info">2010 - 2021 © «ГлавФундамент»</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

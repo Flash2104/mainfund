@@ -1,0 +1,29 @@
+.section-main-screen__heading-geotechnical {
+	h1 {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 960px) {
+	.section-geotechnical-modeling-functions {
+		.functions-list {
+			flex-wrap: wrap;
+			margin-bottom: 20px;
+			li {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.section-geotechnical-modeling {
+		p + p {
+			margin-top: 8px;
+		}
+	}
+	.section-geotechnical-modeling-functions .functions-list li,
+	.section-geotechnical-modeling-functions .functions-list {
+		margin-bottom: 6px;
+	}
+}

@@ -1,0 +1,102 @@
+.section-tsapr {
+	.text-wrapper__item {
+		flex-basis: 50%;
+	}
+
+	.tsapr-link {
+		display: inline-block;
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		transition: all 0.2s;
+		-webkit-transition: all 0.2s;
+		-moz-transition: all 0.2s;
+		&:hover {
+			filter: grayscale(0%);
+			-webkit-filter: grayscale(0%);
+			-moz-filter: grayscale(0%);
+		}
+		&__arrow2 {
+			display: none;
+		}
+		&__img {
+			width: 100%;
+		}
+		button {
+			display: flex;
+			align-items: center;
+			margin: 0px auto;
+			margin-top: 40px;
+		}
+		h2 {
+			color: $red;
+		}
+		button svg {
+			margin-left: 30px;
+			// path {
+			// 	stroke: #333333;
+			// 	fill: #333333;
+			// }
+		}
+	}
+	.tsapr-text {
+		width: 52%;
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.section-tsapr {
+		.tsapr-text {
+			width: 64%;
+		}
+		.tsapr-link__arrow1 {
+			display: none;
+		}
+		.tsapr-link__arrow2 {
+			display: block;
+		}
+	}
+}
+
+@media (max-width: 960px) {
+	.section-tsapr {
+		.tsapr-link button svg {
+			margin-left: 20px;
+			width: 22px;
+			height: 32px;
+		}
+		.tsapr-link h2 {
+			text-align: left;
+			width: min-content;
+		}
+		.tsapr-link button {
+			margin-top: 30px;
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.section-tsapr .tsapr-text {
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	.section-tsapr {
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+		.tsapr-link h2 {
+			width: 100%;
+		}
+		.tsapr-link button {
+			margin-left: 0;
+			margin-right: auto;
+			margin-top: 15px;
+		}
+		.tsapr-link button svg {
+			margin-left: 10px;
+		}
+	}
+}

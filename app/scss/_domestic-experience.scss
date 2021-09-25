@@ -1,0 +1,143 @@
+.section-domestic-experience-research {
+	.title {
+		max-width: 550px;
+	}
+	.research-text {
+		margin-top: 27px;
+		font-weight: 400;
+		max-width: 866px;
+		font-size: 25px;
+		line-height: 35px;
+		padding-left: 20px;
+	}
+}
+
+.section-domestic-experience-leaders {
+	background-color: $black;
+	.text-wrapper__item:nth-child(1) .photo-item {
+		margin-top: 35px;
+	}
+	.text-wrapper__item:nth-child(2) .photo-item {
+		margin-bottom: 35px;
+	}
+	.experience-leaders__text {
+		max-width: 480px;
+		padding-left: 20px;
+		margin: 20px 0;
+	}
+	.title {
+		max-width: 600px;
+	}
+	.border {
+		border-left: 1px solid rgba(255, 255, 255, 0.54);
+	}
+}
+
+@media (max-width: 960px) {
+	.section-domestic-experience {
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+		.text-wrapper__item + .text-wrapper__item {
+			margin-top: 10px;
+		}
+		.text-wrapper__item:nth-child(2) {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			p {
+				flex-basis: 49%;
+				margin-top: 0;
+			}
+		}
+	}
+	.section-domestic-experience-research {
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+		.text-wrapper__item + .text-wrapper__item {
+			margin-top: 10px;
+		}
+		.research-text {
+			font-size: 23px;
+			line-height: 33px;
+			max-width: 604px;
+		}
+	}
+	.section-domestic-experience-leaders {
+		.text-wrapper__item {
+			flex-basis: 100%;
+		}
+		.text-wrapper__item + .text-wrapper__item {
+			margin-top: 10px;
+		}
+		.photo-item {
+			margin: 30px 0;
+		}
+	}
+
+	.text-wrapper p + p {
+		margin-top: 10px;
+	}
+	.section-domestic-experience-leaders .experience-leaders__text {
+		max-width: 100%;
+		padding-left: 0;
+	}
+	.section-domestic-experience-leaders .wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		p {
+			flex-basis: 49%;
+			margin-top: 0 !important;
+		}
+		.text-wrapper p + p {
+			margin-top: 0px;
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.section-domestic-experience .text-wrapper__item:nth-child(2) p {
+		flex-basis: 100%;
+	}
+	.section-domestic-experience-research .research-text {
+		font-size: 20px;
+		line-height: 30px;
+		max-width: 100%;
+		padding-left: 30px;
+	}
+	.section-domestic-experience-leaders .photo-item {
+		margin: 20px 0;
+	}
+	.section-domestic-experience-leaders .text-wrapper__item:nth-child(1) .photo-item,
+	.section-domestic-experience-leaders .text-wrapper__item:nth-child(2) .photo-item {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.section-domestic-experience-differences {
+		.text-wrapper__item + .text-wrapper__item {
+			margin-top: 10px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.section-domestic-experience-research .research-text {
+		font-size: 17px;
+		line-height: 22px;
+		padding-left: 10px;
+	}
+	.section-domestic-experience-leaders .wrapper p {
+		flex-basis: 100%;
+	}
+	.section-domestic-experience-leaders .experience-leaders__text {
+		margin: 10px 0;
+	}
+	.text-wrapper p + p {
+		margin-top: 10px;
+	}
+	.text-wrapper__item + .text-wrapper__item {
+		margin-top: 10px;
+	}
+}

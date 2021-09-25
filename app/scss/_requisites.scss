@@ -1,0 +1,18 @@
+.section-requisites {
+}
+.mfp-with-zoom {
+	.mfp-counter {
+		display: none;
+	}
+	.mfp-title {
+		margin-top: 20px;
+		font-weight: 700;
+	}
+	img.mfp-img {
+		width: auto;
+	}
+}
+
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+	cursor: pointer;
+}
